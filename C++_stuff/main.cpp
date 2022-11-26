@@ -7,7 +7,7 @@
 
 int main() {
 
-    double c = 223.4;    // mm of chord
+    double c = 380;    // mm of chord
 
 
     std::vector<double> vec1;
@@ -30,7 +30,7 @@ int main() {
         if (j < 2) {
             vec1.push_back(num);     // first two rows are saved in the first vector
             j++;
-            std::cout << "sono entrato qui"<< std::endl;
+
             if(j == 2)
             {
                 k = 0;
@@ -39,8 +39,7 @@ int main() {
         {
             vec2.push_back(num);   // last two rows are saved in the second vector
             k++;
-            std::cout << "j vale " << j << std::endl;
-            std::cout << "k vale " << k << std::endl;
+
             if( k == 2)
             {
                 j = 0;
@@ -115,6 +114,6 @@ int main() {
 
     file_out.close();
 
-    std::cout << "Ho prodotto un file coordinates_ready.txt con dentro le coordinate arrangiate in maniera corretta" << std::endl;
+    std::cout << "Ho prodotto un file con dentro le coordinate arrangiate in maniera corretta" << std::endl;
     return 0;
 }
