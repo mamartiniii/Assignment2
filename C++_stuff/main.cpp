@@ -15,7 +15,7 @@ int main() {
     std::vector<std::string> str_arr;
 
     std::cout << "Il file con le coordinate (e altri caratteri vari) deve chiamarsi coord.txt e trovarsi in cmake-build-debug" << std::endl;
-    std::ifstream file("coord_flap.txt");
+    std::ifstream file("coord.txt");
 
     assert(file.is_open());
 
@@ -63,7 +63,7 @@ int main() {
 
     file.close();
 
-    std::ofstream file_out("coordinates_flap_ready.txt");
+    std::ofstream file_out("coordinates_ready.txt");
     assert(file_out.is_open());
 
     file_out.precision(4);
