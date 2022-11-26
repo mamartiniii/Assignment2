@@ -50,7 +50,7 @@ int main() {
         file.seekg(+1, std::ios::cur);
         char ch;
         file >> ch;
-        while(ch != '0' && !file.eof() ) {
+        while(ch != '0' && ch != '-' && !file.eof() ) {
             //std::cout << ch << std::endl;
             file >> ch;
         }
