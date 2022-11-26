@@ -7,6 +7,8 @@
 
 int main() {
 
+    double c = 223.4;    // mm of chord
+
 
     std::vector<double> vec1;
     std::vector<double> vec2;
@@ -73,11 +75,13 @@ int main() {
     for(auto &e : vec1) {
 
 
-        file_out << std::setprecision(4)<< std::fixed <<  e;
+        file_out << std::setprecision(4)<< std::fixed <<  e*c;
 
         file_out << "\t";
+
         i++;
         if(i == 2) {
+            file_out << 0.0000;
             file_out << "\n";
             i = 0;
             w++;
@@ -90,10 +94,12 @@ int main() {
     for(auto &e : vec2) {
 
 
-        file_out << e;
+        file_out << e*c;
         file_out << "\t";
+
         i++;
         if(i == 2 && e != vec2[vec2.size()-1]) {
+            file_out << 0.0000;
             file_out << "\n";
             i = 0;
             w++;
@@ -103,6 +109,8 @@ int main() {
         }
 
     }
+
+    file_out << 0.0000;
 
 
     file_out.close();
