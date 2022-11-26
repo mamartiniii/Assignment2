@@ -7,7 +7,7 @@
 
 int main() {
 
-    double c = 380.0/1000.0;    // mm of chord
+    double c = 380.0*1000.0;    // mm of chord
 
 
     std::vector<double> vec1;
@@ -74,7 +74,7 @@ int main() {
     for(auto &e : vec1) {
 
 
-        file_out << std::setprecision(6)<< std::fixed <<  e*c;
+        file_out << std::setprecision(0)<< std::fixed <<  e*c;
 
         file_out << "\t";
 
