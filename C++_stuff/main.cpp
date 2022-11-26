@@ -7,7 +7,7 @@
 
 int main() {
 
-    double c = 380;    // mm of chord
+    double c = 380.0/1000.0;    // mm of chord
 
 
     std::vector<double> vec1;
@@ -66,7 +66,7 @@ int main() {
     std::ofstream file_out("coordinates_ready.txt");
     assert(file_out.is_open());
 
-    file_out.precision(4);
+    file_out.precision(6);
     int w = 1;
     int i = 0;
     file_out << 1 << "\t" << w << "\t";
@@ -74,7 +74,7 @@ int main() {
     for(auto &e : vec1) {
 
 
-        file_out << std::setprecision(4)<< std::fixed <<  e*c;
+        file_out << std::setprecision(6)<< std::fixed <<  e*c;
 
         file_out << "\t";
 
