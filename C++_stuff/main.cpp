@@ -7,7 +7,7 @@
 
 int main() {
 
-    double c = 380*1000;    // micrometer of chord
+    double c = 380.0/1000.0;    // micrometer of chord
 
 
     std::vector<double> vec1;
@@ -15,7 +15,7 @@ int main() {
     std::vector<std::string> str_arr;
 
     std::cout << "Il file con le coordinate (e altri caratteri vari) deve chiamarsi coord.txt e trovarsi in cmake-build-debug" << std::endl;
-    std::ifstream file("coord.txt");
+    std::ifstream file("coord_flap.txt");
 
     assert(file.is_open());
 
@@ -68,8 +68,8 @@ int main() {
 
     file.close();
 
-    std::ofstream file_up("down.txt");
-    std::ofstream file_down("up.txt");
+    std::ofstream file_up("coord_flap_down_meter.txt");
+    std::ofstream file_down("coord_flap_up_meter.txt");
 
 
     assert(file_up.is_open());
@@ -87,7 +87,7 @@ int main() {
     for(auto &e : vec1) {
 
 
-        file_up << std::setprecision(0) << std::fixed<<  e*c;
+        file_up << std::setprecision(6) << std::fixed<<  e*c;
         file_up << "\t";
 
         i++;
@@ -122,7 +122,7 @@ int main() {
     for(auto &e : vec2) {
 
 
-        file_down << std::setprecision(0) << std::fixed << e*c;
+        file_down << std::setprecision(6) << std::fixed << e*c;
         file_down << "\t";
 
         i++;
