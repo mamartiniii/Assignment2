@@ -2,13 +2,14 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">2255</timestamp-max>
+    <timestamp-max valType="Int64">2257</timestamp-max>
     <framework-build-version valType="String">21.2.209.0</framework-build-version>
     <external-version-string valType="String">2021 R2</external-version-string>
-    <last-saved-utc valType="String">12/05/2022 12:34:22</last-saved-utc>
+    <last-saved-utc valType="String">12/06/2022 07:33:28</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">frsala@STI-WIN10-AX044:C:\Users\frsala\AppData\Local\Temp\WorkbenchLogs\CoreEvents11508.log</ArrayEntry>
+      <ArrayEntry Index="1">frsala@STI-WIN10-AX003:C:\Users\frsala\AppData\Local\Temp\WorkbenchLogs\CoreEvents6796.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -94,7 +95,7 @@
       <Object Name="/FileContainer/FileReference:F2" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F2</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$03e0ea64-093f-4dbe-a4b7-d8d54ba7793b, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 5}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$03e0ea64-093f-4dbe-a4b7-d8d54ba7793b, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 6}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -107,7 +108,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2230, "Input": 1460, "Output": 1460}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2257, "Input": 1460, "Output": 1460}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/Messages/StoredMessage:Message" Version="1.0">
@@ -127,6 +128,11 @@ Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryNEW\nfs_workbench_project2_file
         <object-name valType="String">Message 2</object-name>
         <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
 Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryNEW\nfs_workbench_project2_files\dp0\designPoint.wbdp""", "Details": None, "Association": "", "DateTimeStamp": 12/05/2022 13:17:17, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 3" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 3</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": r"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryNEW\nfs_workbench_project2_files\dp0\FFF\DM\FFF.agdb  does not exist any more. The file might have been renamed, moved or deleted. You can use the Files View to specify the correct file location.", "Details": None, "Association": "", "DateTimeStamp": 12/06/2022 08:33:10, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
       </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
@@ -170,9 +176,9 @@ Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryNEW\nfs_workbench_project2_file
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 1986, "Input": 2082, "Output": 1466}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1986, "Input": 2256, "Output": 1466}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Schematic/System:FFF" Version="1.0">
         <class-type valType="String">System</class-type>
         <object-name valType="String">FFF</object-name>
@@ -226,7 +232,7 @@ Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryNEW\nfs_workbench_project2_file
       <Object Name="/Schematic/Component:Geometry" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Geometry</object-name>
-        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "cad_designmodeler", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Geometry", "_overwrittenUpdatable": None, "Template": $$c7f60a4d-968e-4f0d-b63a-00ef93f3336a, "InSystem": $$296866fe-9aac-4fbf-a5e6-ba1ef5bf88a8, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "cad_designmodeler_missing", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Geometry", "_overwrittenUpdatable": None, "Template": $$c7f60a4d-968e-4f0d-b63a-00ef93f3336a, "InSystem": $$296866fe-9aac-4fbf-a5e6-ba1ef5bf88a8, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
       </Object>
       <Object Name="/Schematic/Component:Mesh" Version="1.0">
         <class-type valType="String">Component</class-type>
@@ -286,7 +292,7 @@ Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryNEW\nfs_workbench_project2_file
       <Object Name="/Units/UnitSystem:UnitSys" Version="1.0">
         <class-type valType="String">UnitSystem</class-type>
         <object-name valType="String">UnitSys</object-name>
-        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {"Temperature": "C", "Energy Source Coefficient": "W m^-3 C^-1", "Heat Transfer Coefficient": "W m^-2 C^-1", "InvTemp1": "C^-1", "InvTemp2": "C^-2", "InvTemp3": "C^-3", "InvTemp4": "C^-4", "Molar Entropy": "J mol^-1 C^-1", "Normalized Value": "m m^-1", "Seebeck Coefficient": "V C^-1", "Specific Entropy": "J kg^-1 C^-1", "Specific Heat Capacity": "J kg^-1 C^-1", "Temperature Gradient": "C m^-1", "Thermal Conductivity": "W m^-1 C^-1", "Thermal Expansivity": "C^-1", "Stress Per Temperature": "Pa C^-1", "Temperature Difference": "C", "Density Derivative wrt Temperature": "kg m^-3 C^-1", "Pressure Derivative wrt Temperature": "Pa C^-1", "Thermal Capacitance": "J C^-1", "Thermal Conductance": "W C^-1", "Thermal Contact Resistance": "W^-1 m^2 C", "Piezoelectric Strain Coefficient": "A s N^-1", "Piezoelectric Stress Coefficient": "A s m^-2"}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
+        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
       </Object>
       <Object Name="/Units/UnitSystem:UnitSys 1" Version="1.0">
         <class-type valType="String">UnitSystem</class-type>

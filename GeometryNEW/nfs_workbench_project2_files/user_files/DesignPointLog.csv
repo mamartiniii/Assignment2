@@ -1,0 +1,12 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by Ansys Workbench.
+# Project name: nfs_workbench_project2
+# Creation date: 12/06/2022 08:33:01
+# 
+# 12/06/2022 08:33:01
+# The parameters defined in the project are:
+# ,P1 - flapRotation [degree]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1
+DP 0,0
