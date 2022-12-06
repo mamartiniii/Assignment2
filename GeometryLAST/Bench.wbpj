@@ -2,15 +2,16 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">2599</timestamp-max>
+    <timestamp-max valType="Int64">2672</timestamp-max>
     <framework-build-version valType="String">21.2.209.0</framework-build-version>
     <external-version-string valType="String">2021 R2</external-version-string>
-    <last-saved-utc valType="String">12/06/2022 09:00:10</last-saved-utc>
+    <last-saved-utc valType="String">12/06/2022 09:31:17</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">mmartini@STI-WIN10-AX027:C:\Users\mmartini\AppData\Local\Temp\WorkbenchLogs\CoreEvents3404.log</ArrayEntry>
       <ArrayEntry Index="1">mmartini@STI-WIN10-AX027:C:\Users\mmartini\AppData\Local\Temp\WorkbenchLogs\CoreEvents8220.log</ArrayEntry>
       <ArrayEntry Index="2">mmartini@STI-WIN10-AX027:C:\Users\mmartini\AppData\Local\Temp\WorkbenchLogs\CoreEvents3712.log</ArrayEntry>
+      <ArrayEntry Index="3">mmartini@STI-WIN10-AX027:C:\Users\mmartini\AppData\Local\Temp\WorkbenchLogs\CoreEvents844.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -93,7 +94,7 @@
       <Object Name="/FileContainer/FileReference:F2" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F2</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$95f1ddcf-202f-4b0b-b93b-7b4772984e4b, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 9}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$95f1ddcf-202f-4b0b-b93b-7b4772984e4b, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 11}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -122,7 +123,7 @@
       <maxUpdateOrder valType="Double">1</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2596, "Input": 2597, "Output": 1463}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2670, "Input": 2665, "Output": 1463}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
@@ -169,7 +170,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2572, "Input": 2537, "Output": 1466}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2656, "Input": 2666, "Output": 1466}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Schematic/System:Geom" Version="1.0">
@@ -240,7 +241,7 @@
       <Object Name="/Schematic/Component:Mesh" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Mesh</object-name>
-        <member-data valType="String">{"DisplayText": "Mesh", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Mesh", "_overwrittenUpdatable": None, "Template": $$1ce59e32-e385-4471-a12e-d7dbd76fe651, "InSystem": $$3b819097-ffd3-4dd2-869d-d5c62d41c832, "MasterSources": {"Sources": [[{"DataType": "Geometry", "Component": $$32d5e71c-c5f6-448b-8fc6-ee703e594f4c, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Mesh", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Mesh", "_overwrittenUpdatable": None, "Template": $$1ce59e32-e385-4471-a12e-d7dbd76fe651, "InSystem": $$3b819097-ffd3-4dd2-869d-d5c62d41c832, "MasterSources": {"Sources": [[{"DataType": "Geometry", "Component": $$32d5e71c-c5f6-448b-8fc6-ee703e594f4c, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {"cfd_base": 2, "cfd_preppost": 2}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
       </Object>
     </Container>
     <Container Name="ReportDataContainer" Version="1.0">
@@ -294,9 +295,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2152, "Input": 2153, "Output": 1886}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2152, "Input": 2623, "Output": 1886}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/DpdbContainer/DpdbSettings:Dpdb Settings Entity" Version="1.0">
         <class-type valType="String">DpdbSettings</class-type>
         <object-name valType="String">Dpdb Settings Entity</object-name>
