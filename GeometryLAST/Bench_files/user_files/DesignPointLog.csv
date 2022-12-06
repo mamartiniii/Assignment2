@@ -1,0 +1,12 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by Ansys Workbench.
+# Project name: Bench
+# Creation date: 12/06/2022 09:13:06
+# 
+# 12/06/2022 09:13:06
+# The parameters defined in the project are:
+# ,P1 - Distance_FLoor [m],P2 - Angle_Flap [degree]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2
+DP 0,0.1,0
