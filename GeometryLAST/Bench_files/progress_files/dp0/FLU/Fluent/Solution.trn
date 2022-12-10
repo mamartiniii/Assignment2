@@ -1,0 +1,138 @@
+
+Build Time: May 28 2021 13:54:23 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v212/fluent/ntbin/win64/fluent.exe
+
+---------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                          
+---------------------------------------------------------------------------------
+n1    STI-WIN10-ax013  2/3  Windows-x64  10556  Intel(R) Xeon(R) Gold 6248R     
+n0*   STI-WIN10-ax013  1/3  Windows-x64  7432   Intel(R) Xeon(R) Gold 6248R     
+host  STI-WIN10-ax013       Windows-x64  11436  Intel(R) Xeon(R) Gold 6248R     
+
+MPI Option Selected: intel
+Selected system interconnect: default
+---------------------------------------------------------------------------------
+
+Cortex Process ID: 2092 
+License Server Path: 1055@siclic1.epfl.ch 
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from STI-WIN10-ax013:"C:\Users\mmartini\Downloads\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+        9861 cells,     1 cell zone  ...
+           9861 mixed cells,  zone id: 2
+       15501 faces,     6 face zones ...
+          15121 2D interior faces,  zone id: 1
+             34 2D velocity-inlet faces,  zone id: 5
+             50 2D pressure-outlet faces,  zone id: 6
+             90 2D wall faces,  zone id: 7
+             42 2D symmetry faces,  zone id: 8
+            164 2D wall faces,  zone id: 9
+        5639 nodes,     1 node zone  ...
+  Done.
+
+
+
+Building...
+     mesh
+	distributing mesh
+		parts..,
+		faces..,
+		nodes..,
+		cells..,
+        bandwidth reduction using Reverse Cuthill-McKee: 4561/70 = 65.1571
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	wall-surface_body
+	belt_ground
+	outlet
+	inlet
+	interior-surface_body
+	wall
+	surface_bodySetting surface_body (mixture) ... Done.
+ Setting zone id of surface_body to 2.
+ Setting zone id of wall to 8.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of inlet to 5.
+ Setting zone id of outlet to 6.
+ Setting zone id of belt_ground to 7.
+ Setting zone id of wall-surface_body to 9.
+Done.
+Setting surface_body (mixture) ... Done.
+Setting wall (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting belt_ground (mixture) ... Done.
+Setting wall-surface_body (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+
+Reading from STI-WIN10-ax013:"C:\Users\mmartini\Downloads\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-5-00063.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+  iter  continuity  x-velocity  y-velocity      energy           k       omega     time/iter
+    63  9.7193e-04  2.7079e-06  7.3507e-07  1.5548e-16  4.8422e-04  4.1260e-05  0:00:00  490
+!   63 solution is converged
+    64  9.0608e-04  2.5339e-06  6.8120e-07  1.5579e-16  4.5390e-04  4.1190e-05  0:00:00  489
+!   64 solution is converged
+Registering ReportDefFiles, ("C:\Users\mmartini\Downloads\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\.\\report-def-0-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\mmartini\\AppData\\Local\\Temp\\flntgz-114362 ...
+Done.
+
+Writing data to C:\\Users\\mmartini\\Downloads\\Assignment2\\GeometryLAST\\Bench_files\\dp0\\FLU\\Fluent\\SYS.ip ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	temperature
+	k
+	omega
+Done.
+
+Writing to STI-WIN10-ax013:"C:\Users\mmartini\Downloads\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-6.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+        9861 cells,     1 zone  ...
+       15501 faces,     6 zones ...
+        5639 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to STI-WIN10-ax013:"C:\Users\mmartini\Downloads\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-6-00064.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 1 iterations on 2 compute nodes
+  Average wall-clock time per iteration:              0.062 sec
+  Global reductions per iteration:                      131 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                         1889 messages
+  Data transfer per iteration:                        0.441 MB
+  LE solves per iteration:                                4 solves
+  LE wall-clock time per iteration:                   0.037 sec (59.7%)
+  LE global solves per iteration:                         7 solves
+  LE global wall-clock time per iteration:            0.000 sec (0.0%)
+  LE global matrix maximum size:                        12
+  AMG cycles per iteration:                           7.000 cycles
+  Relaxation sweeps per iteration:                      841 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              360
+
+  Total wall-clock time:                              0.062 sec
+
