@@ -1,7 +1,7 @@
 <FluentXMLReport>
 <version>
 Fluent
-Version: 2d, dp, pbns, sstkw (2d, double precision, pressure-based, SST k-omega)
+Version: 2d, pbns, S-A (2d, pressure-based, Spalart-Allmaras)
 Release: 21.2.0
 Title: 
 </version>
@@ -11,25 +11,25 @@ Title:
 Models
 ------
 
-   Model                        Settings                       
-   ---------------------------------------------------------
-   Space                        2D                             
-   Time                         Steady                         
-   Viscous                      SST k-omega turbulence model   
-   Heat Transfer                Enabled                        
-   Solidification and Melting   Disabled                       
-   Radiation                    None                           
-   Species                      Disabled                       
-   Coupled Dispersed Phase      Disabled                       
-   NOx Pollutants               Disabled                       
-   SOx Pollutants               Disabled                       
-   Soot                         Disabled                       
-   Mercury Pollutants           Disabled                       
-   Structure                    Disabled                       
-   Acoustics                    Disabled                       
-   Eulerian Wall Film           Disabled                       
-   Potential/Li-ion Battery     Disabled                       
-   Multiphase                   Disabled                       
+   Model                        Settings                            
+   --------------------------------------------------------------
+   Space                        2D                                  
+   Time                         Steady                              
+   Viscous                      Spalart-Allmaras turbulence model   
+   Production Option            Vorticity                           
+   Heat Transfer                Disabled                            
+   Solidification and Melting   Disabled                            
+   Species                      Disabled                            
+   Coupled Dispersed Phase      Disabled                            
+   NOx Pollutants               Disabled                            
+   SOx Pollutants               Disabled                            
+   Soot                         Disabled                            
+   Mercury Pollutants           Disabled                            
+   Structure                    Disabled                            
+   Acoustics                    Disabled                            
+   Eulerian Wall Film           Disabled                            
+   Potential/Li-ion Battery     Disabled                            
+   Multiphase                   Disabled                            
 
 </Models>
 
@@ -85,20 +85,20 @@ Boundary Conditions
 
    Zones
 
-      name                id   type              
-      ----------------------------------------
-      wall                8    symmetry          
-      inlet               5    velocity-inlet    
-      outlet              6    pressure-outlet   
-      belt_ground         7    wall              
-      wall-surface_body   9    wall              
+      name          id   type              
+      ----------------------------------
+      inlet         5    velocity-inlet    
+      outlet        6    pressure-outlet   
+      belt_ground   7    wall              
+      wall          8    wall              
+      mainupper     9    wall              
+      mainlower     10   wall              
+      flapupper     11   wall              
+      flaplower     12   wall              
+      mainte        13   wall              
+      flapte        14   wall              
 
    Setup Conditions
-
-      wall
-
-         Condition   Value   
-         -----------------
 
       inlet
 
@@ -115,18 +115,64 @@ Boundary Conditions
 
          Condition                                            Value         
          ----------------------------------------------------------------
-         Thermal BC Type                                      Heat Flux     
          Wall Motion                                          Moving Wall   
          Shear Boundary Condition                             No Slip       
          Wall Surface Roughness                               0             
-         Define wall motion relative to adjacent cell zone?   yes           
+         Define wall motion relative to adjacent cell zone?   no            
          Velocity Magnitude [m/s]                             30            
 
-      wall-surface_body
+      wall
 
          Condition                  Value             
          ------------------------------------------
-         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     0                 
+
+      mainupper
+
+         Condition                  Value             
+         ------------------------------------------
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     0                 
+
+      mainlower
+
+         Condition                  Value             
+         ------------------------------------------
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     0                 
+
+      flapupper
+
+         Condition                  Value             
+         ------------------------------------------
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     0                 
+
+      flaplower
+
+         Condition                  Value             
+         ------------------------------------------
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     0                 
+
+      mainte
+
+         Condition                  Value             
+         ------------------------------------------
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     0                 
+
+      flapte
+
+         Condition                  Value             
+         ------------------------------------------
          Wall Motion                Stationary Wall   
          Shear Boundary Condition   No Slip           
          Wall Surface Roughness     0                 
@@ -139,11 +185,10 @@ Solver Settings
 
    Equations
 
-      Equation     Solved   
-      -------------------
-      Flow         yes      
-      Turbulence   yes      
-      Energy       yes      
+      Equation                       Solved   
+      -------------------------------------
+      Flow                           yes      
+      Modified Turbulent Viscosity   yes      
 
    Numerics
 
@@ -151,56 +196,52 @@ Solver Settings
       ---------------------------------------
       Absolute Velocity Formulation   yes       
 
-   Pseudo Transient Explicit Relaxation Factors
+   Under-Relaxation Factors
 
-      Variable                    Relaxation Factor   
-      ---------------------------------------------
-      Density                     1                   
-      Body Forces                 1                   
-      Turbulent Kinetic Energy    0.75                
-      Specific Dissipation Rate   0.75                
-      Turbulent Viscosity         1                   
-      Energy                      0.75                
-      Explicit Momentum           0.5                 
-      Explicit Pressure           0.5                 
+      Variable                       Relaxation Factor   
+      ------------------------------------------------
+      Pressure                       0.3                 
+      Density                        1                   
+      Body Forces                    1                   
+      Momentum                       0.7                 
+      Modified Turbulent Viscosity   0.8                 
+      Turbulent Viscosity            1                   
 
    Linear Solver
 
-      Variable                    Solver Type   Termination Criterion   Residual Reduction Tolerance   
-      ----------------------------------------------------------------------------------------------
-      Flow                        F-Cycle       0.1                                                    
-      Turbulent Kinetic Energy    F-Cycle       0.1                                                    
-      Specific Dissipation Rate   F-Cycle       0.1                                                    
-      Energy                      F-Cycle       0.1                                                    
+      Variable                       Solver Type   Termination Criterion   Residual Reduction Tolerance   
+      -------------------------------------------------------------------------------------------------
+      Pressure                       V-Cycle       0.1                                                    
+      X-Momentum                     Flexible      0.1                     0.7                            
+      Y-Momentum                     Flexible      0.1                     0.7                            
+      Modified Turbulent Viscosity   Flexible      0.1                     0.7                            
 
    Pressure-Velocity Coupling
 
-      Parameter          Value     
-      --------------------------
-      Type               Coupled   
-      Pseudo Transient   yes       
+      Parameter                     Value   
+      -----------------------------------
+      Type                          PISO    
+      Skewness-Neighbour Coupling   yes     
+      Skewness Correction           1       
+      Neighbour Correction          1       
 
    Discretization Scheme
 
-      Variable                    Scheme                
-      -----------------------------------------------
-      Pressure                    Second Order          
-      Momentum                    Second Order Upwind   
-      Turbulent Kinetic Energy    Second Order Upwind   
-      Specific Dissipation Rate   Second Order Upwind   
-      Energy                      Second Order Upwind   
+      Variable                       Scheme                
+      --------------------------------------------------
+      Pressure                       Second Order          
+      Momentum                       Second Order Upwind   
+      Modified Turbulent Viscosity   First Order Upwind    
 
    Solution Limits
 
-      Quantity                         Limit    
-      ---------------------------------------
-      Minimum Absolute Pressure        1        
-      Maximum Absolute Pressure        5e+10    
-      Minimum Temperature              1        
-      Maximum Temperature              5000     
-      Minimum Turb. Kinetic Energy     1e-14    
-      Minimum Spec. Dissipation Rate   1e-20    
-      Maximum Turb. Viscosity Ratio    100000   
+      Quantity                        Limit    
+      --------------------------------------
+      Minimum Absolute Pressure       1        
+      Maximum Absolute Pressure       5e+10    
+      Minimum Temperature             1        
+      Maximum Temperature             5000     
+      Maximum Turb. Viscosity Ratio   100000   
 
 </SolverSettings>
 
