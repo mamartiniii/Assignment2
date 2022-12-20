@@ -196,34 +196,30 @@ Solver Settings
       ---------------------------------------
       Absolute Velocity Formulation   yes       
 
-   Under-Relaxation Factors
+   Pseudo Transient Explicit Relaxation Factors
 
       Variable                       Relaxation Factor   
       ------------------------------------------------
-      Pressure                       0.3                 
       Density                        1                   
       Body Forces                    1                   
-      Momentum                       0.7                 
-      Modified Turbulent Viscosity   0.8                 
+      Modified Turbulent Viscosity   0.75                
       Turbulent Viscosity            1                   
+      Explicit Momentum              0.5                 
+      Explicit Pressure              0.5                 
 
    Linear Solver
 
       Variable                       Solver Type   Termination Criterion   Residual Reduction Tolerance   
       -------------------------------------------------------------------------------------------------
-      Pressure                       V-Cycle       0.1                                                    
-      X-Momentum                     Flexible      0.1                     0.7                            
-      Y-Momentum                     Flexible      0.1                     0.7                            
-      Modified Turbulent Viscosity   Flexible      0.1                     0.7                            
+      Flow                           F-Cycle       0.1                                                    
+      Modified Turbulent Viscosity   F-Cycle       0.1                                                    
 
    Pressure-Velocity Coupling
 
-      Parameter                     Value   
-      -----------------------------------
-      Type                          PISO    
-      Skewness-Neighbour Coupling   yes     
-      Skewness Correction           1       
-      Neighbour Correction          1       
+      Parameter          Value     
+      --------------------------
+      Type               Coupled   
+      Pseudo Transient   yes       
 
    Discretization Scheme
 
@@ -231,7 +227,7 @@ Solver Settings
       --------------------------------------------------
       Pressure                       Second Order          
       Momentum                       Second Order Upwind   
-      Modified Turbulent Viscosity   First Order Upwind    
+      Modified Turbulent Viscosity   Second Order Upwind   
 
    Solution Limits
 
