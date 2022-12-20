@@ -1,0 +1,147 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+designPoint1 = Parameters.GetDesignPoint(Name="0")
+parameter1 = Parameters.GetParameter(Name="P1")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.036366 [m]")
+designPoint2 = Parameters.GetDesignPoint(Name="1")
+designPoint2.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.037506 [m]")
+designPoint3 = Parameters.CreateDesignPoint()
+designPoint3.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.317566 [m]")
+designPoint4 = Parameters.CreateDesignPoint()
+designPoint4.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.057266 [m]")
+designPoint5 = Parameters.CreateDesignPoint()
+designPoint5.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.067526 [m]")
+designPoint6 = Parameters.CreateDesignPoint()
+designPoint6.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.077406 [m]")
+designPoint7 = Parameters.CreateDesignPoint()
+designPoint7.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.097546 [m]")
+designPoint8 = Parameters.CreateDesignPoint()
+designPoint8.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.117306 [m]")
+designPoint9 = Parameters.CreateDesignPoint()
+designPoint9.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.167466 [m]")
+designPoint10 = Parameters.CreateDesignPoint()
+designPoint10.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.242326 [m]")
+designPoint11 = Parameters.CreateDesignPoint()
+designPoint11.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.765966 [m]")
+designPoint12 = Parameters.CreateDesignPoint()
+designPoint12.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.036366 [m]")
+parameter2 = Parameters.GetParameter(Name="P2")
+designPoint12.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint13 = Parameters.CreateDesignPoint()
+designPoint13.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.037506 [m]")
+designPoint13.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint14 = Parameters.CreateDesignPoint()
+designPoint14.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint15 = Parameters.CreateDesignPoint()
+designPoint15.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint14.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.317566 [m]")
+designPoint15.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.057266 [m]")
+designPoint3.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.047386 [m]")
+designPoint14.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.047386 [m]")
+designPoint16 = Parameters.CreateDesignPoint()
+designPoint16.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.067526 [m]")
+designPoint17 = Parameters.CreateDesignPoint()
+designPoint17.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.077406 [m]")
+designPoint18 = Parameters.CreateDesignPoint()
+designPoint18.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.097546 [m]")
+designPoint19 = Parameters.CreateDesignPoint()
+designPoint19.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.117306 [m]")
+designPoint20 = Parameters.CreateDesignPoint()
+designPoint20.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.167466 [m]")
+designPoint21 = Parameters.CreateDesignPoint()
+designPoint21.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.242326 [m]")
+designPoint22 = Parameters.CreateDesignPoint()
+designPoint22.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="0.765966 [m]")
+designPoint16.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint17.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint18.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint19.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint20.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint21.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+designPoint22.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-8.5 [degree]")
+Update()
+system1 = GetSystem(Name="SYS")
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+mesh1.Exit()
+system2 = GetSystem(Name="FLU")
+setup1 = system2.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(Precision="Double", EnvPath={}, NumberOfProcessorsMeshing=2, NumberOfProcessors=2))
+setup1.Edit()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(Precision="Single", EnvPath={}))
+setup1.Edit()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}, NumberOfProcessorsMeshing=1, NumberOfProcessors=1))
+setup1.Edit()
+Save(Overwrite=True)

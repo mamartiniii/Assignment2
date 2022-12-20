@@ -10,3 +10,76 @@
 # The following header line defines the name of the columns by reference to the parameters.
 Name,P1,P2
 DP 0,0.1,0
+# 
+# A non parametric change occurred and invalidated design point results.
+# 12/13/2022 11:07:57
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 12/17/2022 18:46:53
+# 
+# 
+# 12/17/2022 18:51:15
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P1 - Distance_FLoor [m],P2 - Angle_Flap [degree],P3 - report-lift-op [N],P4 - report-drag-op [N]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3,P4
+DP 0,0.036366,0,-746.42944,77.839104
+DP 1,0.037506,0,-634.16394,62.051632
+DP 2,0.047386,0,-725.90808,54.99049
+DP 3,0.057266,0,-980.17017,47.721256
+DP 4,0.067526,0,-911.55432,39.279175
+DP 5,0.077406,0,-1059.542,35.086384
+DP 6,0.097546,0,-931.33917,31.81279
+DP 7,0.117306,0,-157647680,-11884360
+DP 8,0.167466,0,-687.27844,16.820442
+DP 9,0.242326,0,-552.02606,0.4186244
+DP 10,0.765966,0,-523.97833,13.957358
+DP 11,0.036366,-8.5,-627.16211,39.696915
+DP 12,0.037506,-8.5,-592.35345,40.051476
+DP 13,0.047386,-8.5,-892.27399,32.007652
+DP 14,0.057266,-8.5,-755.97455,26.922237
+DP 15,0.067526,-8.5,-748.53247,23.28764
+DP 16,0.077406,-8.5,-724.63702,20.452698
+# 
+# A non parametric change occurred and invalidated design point results.
+# 12/17/2022 19:33:41
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 12/20/2022 09:53:53
+# 
+# 
+# 12/20/2022 10:02:26
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P1 - Distance_FLoor [m],P2 - Angle_Flap [degree],P3 - report-lift-op [N],P4 - report-drag-op [N]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3,P4
+DP 0,0.036366,0,-774.15887,65.310638
+DP 1,0.037506,0,-734.63391,64.529221
+DP 2,0.047386,0,-826.28503,54.675301
+DP 3,0.057266,0,-1012.0791,44.974243
+DP 4,0.067526,0,-905.71863,38.148609
+DP 5,0.077406,0,-911.64032,35.51815
+DP 6,0.097546,0,-864.34064,28.372517
+DP 7,0.117306,0,-784.16986,23.702312
+DP 8,0.167466,0,-657.32745,18.829645
+DP 9,0.242326,0,-570.50037,15.744604
+DP 10,0.765966,0,-458.85611,14.592739
+DP 11,0.036366,-8.5,-692.31763,41.677277
+DP 12,0.037506,-8.5,-707.83533,41.818588
+DP 13,0.047386,-8.5,-928.65314,32.612537
+DP 14,0.057266,-8.5,-815.04938,27.773254
+DP 15,0.067526,-8.5,-764.92474,22.630096
+DP 16,0.077406,-8.5,-732.62018,20.298819
+DP 17,0.097546,-8.5,-630.81934,15.833311
+DP 18,0.117306,-8.5,-579.97736,13.132812
+DP 19,0.167466,-8.5,-480.77304,10.929985
+DP 20,0.242326,-8.5,-416.61926,9.2906427
+DP 21,0.765966,-8.5,-343.71356,8.7837133
+# 
+# A non parametric change occurred and invalidated design point results.
+# 12/20/2022 11:30:18
+# 

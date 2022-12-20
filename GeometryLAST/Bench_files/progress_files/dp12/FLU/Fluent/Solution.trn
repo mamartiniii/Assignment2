@@ -1,0 +1,260 @@
+
+Build Time: May 28 2021 13:54:56 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v212/fluent/ntbin/win64/fluent.exe
+
+---------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                          
+---------------------------------------------------------------------------------
+n1    STI-WIN10-ax046  2/3  Windows-x64  6784   Intel(R) Xeon(R) Gold 6248R     
+n0*   STI-WIN10-ax046  1/3  Windows-x64  12116  Intel(R) Xeon(R) Gold 6248R     
+host  STI-WIN10-ax046       Windows-x64  8716   Intel(R) Xeon(R) Gold 6248R     
+
+MPI Option Selected: intel
+Selected system interconnect: default
+---------------------------------------------------------------------------------
+
+Cortex Process ID: 7220 
+License Server Path: 1055@siclic1.epfl.ch 
+Reading "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\SYS\MECH\SYS.1.msh"...
+Buffering for file scan...
+
+    4572 nodes, binary.
+     379 nodes, binary.
+   13060 2D interior faces, zone  1, binary.
+      34 2D velocity-inlet faces, zone  5, binary.
+      45 2D pressure-outlet faces, zone  6, binary.
+      94 2D wall faces, zone  7, binary.
+      42 2D wall faces, zone  8, binary.
+      46 2D wall faces, zone  9, binary.
+      47 2D wall faces, zone 10, binary.
+      34 2D wall faces, zone 11, binary.
+      35 2D wall faces, zone 12, binary.
+       1 2D wall faces, zone 13, binary.
+       1 2D wall faces, zone 14, binary.
+    8487 mixed cells, zone  2, binary.
+
+
+
+Following contexts active in the case file have been de-activated because of their current context control conditions:
+"coupled-pseudo-transient"
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts..,
+		faces..,
+		nodes..,
+		cells..,
+        bandwidth reduction using Reverse Cuthill-McKee: 4308/87 = 49.5172
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	flapte
+	mainte
+	flaplower
+	flapupper
+	mainlower
+	mainupper
+	wall
+	belt_ground
+	outlet
+	inlet
+	surface_body
+	interior-surface_bodySetting surface_body (mixture) ... Done.
+ Setting zone id of surface_body to 2.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of inlet to 5.
+ Setting zone id of outlet to 6.
+ Setting zone id of belt_ground to 7.
+ Setting zone id of wall to 8.
+ Setting zone id of mainupper to 9.
+ Setting zone id of mainlower to 10.
+ Setting zone id of flapupper to 11.
+ Setting zone id of flaplower to 12.
+ Setting zone id of mainte to 13.
+ Setting zone id of flapte to 14.
+Done.
+Setting surface_body (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting belt_ground (mixture) ... Done.
+Setting wall (mixture) ... Done.
+Setting mainupper (mixture) ... Done.
+Setting mainlower (mixture) ... Done.
+Setting flapupper (mixture) ... Done.
+Setting flaplower (mixture) ... Done.
+Setting mainte (mixture) ... Done.
+Setting flapte (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+"Updating Setup cell..."
+"Updating Solution cell..."
+Reading Z:\\NFS_FRASALA\\A_PROJECT_NFS\\Assignment2\\GeometryLAST\\Bench_files\\dp12\\FLU\\Fluent\\SYS.ip...
+Reading IP data ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	nut
+  Done.
+  Initializing values...
+  Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Writing to STI-WIN10-ax046:"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\SYS.1-Setup-Output.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+        8487 cells,     1 zone  ...
+       13439 faces,    11 zones ...
+        4951 nodes,     1 zone  ...
+  Done.
+Done.
+Overwriting "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\.\\report-def-0-rfile.out"  of Report File "report-def-0-rfile"
+Overwriting "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\.\\report-lift-rfile.out"  of Report File "report-lift-rfile"
+Overwriting "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\.\\report-drag-rfile.out"  of Report File "report-drag-rfile"
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+     1  1.0000e+00  2.8799e-03  1.3932e-03  3.1087e-01  0:00:00  999
+     2  6.0052e-01  2.0242e-03  9.3704e-04  2.1744e-01  0:00:00  998
+     3  3.8043e-01  1.1843e-03  5.2570e-04  1.2863e-01  0:00:00  997
+     4  2.5495e-01  7.7845e-04  3.3167e-04  6.8715e-02  0:00:00  996
+     5  1.9462e-01  5.4166e-04  2.2262e-04  3.6702e-02  0:00:00  995
+     6  1.4727e-01  3.9430e-04  1.6583e-04  2.2230e-02  0:00:00  994
+     7  1.1384e-01  3.1642e-04  1.3070e-04  1.6079e-02  0:00:00  993
+     8  8.7891e-02  2.6992e-04  1.0469e-04  1.3495e-02  0:00:00  992
+     9  6.9644e-02  2.4190e-04  8.6283e-05  1.2059e-02  0:16:31  991
+    10  5.6350e-02  2.1604e-04  7.2925e-05  1.0754e-02  0:13:12  990
+    11  4.7719e-02  1.9046e-04  6.1866e-05  9.3898e-03  0:10:33  989
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    12  4.0881e-02  1.6446e-04  5.2470e-05  8.1600e-03  0:08:26  988
+    13  3.5332e-02  1.4156e-04  4.4496e-05  7.0515e-03  0:06:44  987
+    14  2.9948e-02  1.1993e-04  3.7758e-05  6.0772e-03  0:05:23  986
+    15  2.5647e-02  1.0255e-04  3.1807e-05  5.2613e-03  0:04:18  985
+    16  2.2162e-02  8.8181e-05  2.6981e-05  4.5662e-03  0:03:26  984
+    17  1.9710e-02  7.6575e-05  2.3006e-05  4.0212e-03  0:02:45  983
+    18  1.7491e-02  6.7843e-05  1.9843e-05  3.5838e-03  0:02:12  982
+    19  1.5280e-02  6.0591e-05  1.7612e-05  3.2636e-03  0:01:45  981
+    20  1.3545e-02  5.4948e-05  1.6068e-05  3.0438e-03  0:01:24  980
+    21  1.1851e-02  5.0414e-05  1.5118e-05  2.8676e-03  0:01:07  979
+    22  1.0613e-02  4.7238e-05  1.4297e-05  2.7978e-03  0:00:54  978
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    23  9.8542e-03  4.6589e-05  1.4176e-05  2.7603e-03  0:00:43  977
+    24  9.2782e-03  4.3629e-05  1.3511e-05  2.6781e-03  0:00:34  976
+    25  8.4892e-03  3.8390e-05  1.1869e-05  2.6062e-03  0:00:27  975
+    26  7.8716e-03  3.4611e-05  1.0960e-05  2.5244e-03  0:00:22  974
+    27  7.2212e-03  3.0087e-05  9.6532e-06  2.4495e-03  0:03:32  973
+    28  6.5987e-03  2.6023e-05  8.3693e-06  2.3808e-03  0:02:50  972
+    29  5.9831e-03  2.2385e-05  7.0641e-06  2.2367e-03  0:02:15  971
+    30  5.3973e-03  1.9407e-05  5.9273e-06  2.0534e-03  0:01:48  970
+    31  4.8969e-03  1.7126e-05  5.2841e-06  1.8498e-03  0:01:27  969
+    32  4.3544e-03  1.5537e-05  4.5701e-06  1.6355e-03  0:01:09  968
+    33  3.9089e-03  1.4529e-05  4.2606e-06  1.4052e-03  0:00:55  967
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    34  3.4540e-03  1.4058e-05  4.0318e-06  1.1921e-03  0:00:44  966
+    35  3.1005e-03  1.3579e-05  3.9234e-06  1.0211e-03  0:00:35  965
+    36  2.7946e-03  1.2948e-05  3.7715e-06  8.8747e-04  0:00:28  964
+    37  2.5396e-03  1.2003e-05  3.5194e-06  7.9484e-04  0:00:23  963
+    38  2.3228e-03  1.0842e-05  3.2038e-06  7.2957e-04  0:00:18  962
+    39  2.1330e-03  9.5639e-06  2.8660e-06  6.6991e-04  0:00:14  961
+    40  1.9610e-03  8.2681e-06  2.5288e-06  6.0620e-04  0:00:12  960
+    41  1.7941e-03  7.0499e-06  2.2306e-06  5.6019e-04  0:00:09  959
+    42  1.6188e-03  5.9773e-06  1.9566e-06  5.1661e-04  0:00:07  958
+    43  1.4576e-03  5.1570e-06  1.7200e-06  4.6685e-04  0:03:17  957
+    44  1.3025e-03  4.7119e-06  1.5410e-06  4.1444e-04  0:02:38  956
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    45  1.1689e-03  4.5505e-06  1.4304e-06  3.5905e-04  0:02:06  955
+    46  1.0564e-03  4.5004e-06  1.3858e-06  3.1063e-04  0:01:41  954
+    47  9.8655e-04  4.6762e-06  1.4386e-06  2.7318e-04  0:01:20  953
+    48  9.3600e-04  4.6229e-06  1.3837e-06  2.4830e-04  0:01:04  952
+    49  8.9105e-04  4.3840e-06  1.3409e-06  2.3084e-04  0:00:51  951
+    50  8.4146e-04  4.0598e-06  1.2448e-06  2.1805e-04  0:00:41  950
+    51  7.7560e-04  3.4950e-06  1.0738e-06  2.1023e-04  0:00:33  949
+    52  7.1542e-04  3.0938e-06  9.7435e-07  2.0649e-04  0:00:26  948
+    53  6.6750e-04  2.6709e-06  8.3634e-07  2.0203e-04  0:00:21  947
+    54  6.1322e-04  2.3149e-06  7.3110e-07  1.9217e-04  0:00:17  946
+    55  5.6446e-04  2.0146e-06  6.2407e-07  1.7896e-04  0:00:13  945
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    56  5.1469e-04  1.7788e-06  5.3982e-07  1.6185e-04  0:00:11  944
+    57  4.6486e-04  1.5878e-06  4.6367e-07  1.4346e-04  0:03:17  943
+    58  4.1409e-04  1.4866e-06  4.1254e-07  1.2666e-04  0:02:38  942
+    59  3.6786e-04  1.4222e-06  3.8002e-07  1.1162e-04  0:02:06  941
+    60  3.2591e-04  1.3873e-06  3.6443e-07  9.9488e-05  0:01:41  940
+    61  2.9174e-04  1.3300e-06  3.5174e-07  9.1245e-05  0:01:20  939
+    62  2.6502e-04  1.2490e-06  3.3674e-07  8.5293e-05  0:01:04  938
+    63  2.4044e-04  1.1433e-06  3.1325e-07  7.9909e-05  0:00:51  937
+    64  2.1890e-04  1.0271e-06  2.8418e-07  7.4213e-05  0:00:41  936
+    65  2.0091e-04  8.9667e-07  2.5114e-07  6.7314e-05  0:00:33  935
+    66  1.8441e-04  7.7318e-07  2.1842e-07  6.0677e-05  0:00:26  934
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    67  1.6919e-04  6.6462e-07  1.8844e-07  5.5365e-05  0:00:21  933
+    68  1.5522e-04  5.7321e-07  1.6390e-07  5.0149e-05  0:00:17  932
+    69  1.4160e-04  5.0585e-07  1.4616e-07  4.4341e-05  0:00:13  931
+    70  1.2898e-04  4.7198e-07  1.3477e-07  3.8761e-05  0:00:11  930
+    71  1.1913e-04  4.5747e-07  1.2945e-07  3.3377e-05  0:00:09  929
+    72  1.0892e-04  4.5041e-07  1.2842e-07  2.8976e-05  0:00:07  928
+    73  1.0156e-04  4.4420e-07  1.2763e-07  2.5725e-05  0:03:11  927
+    74  9.6722e-05  4.4964e-07  1.3306e-07  2.3369e-05  0:02:33  926
+!   74 solution is converged
+Registering ReportDefFiles, ("Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\.\\report-drag-rfile.out" "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\.\\report-lift-rfile.out" "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\.\\report-def-0-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\frsala\\AppData\\Local\\Temp\\flntgz-87162 ...
+Done.
+
+
+number tracked = 34, escaped = 34
+Writing data to Z:\\NFS_FRASALA\\A_PROJECT_NFS\\Assignment2\\GeometryLAST\\Bench_files\\dp12\\FLU\\Fluent\\SYS.1.ip ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	nut
+Done.
+
+Writing to STI-WIN10-ax046:"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\SYS.1-10.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+        8487 cells,     1 zone  ...
+       13439 faces,    11 zones ...
+        4951 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to STI-WIN10-ax046:"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp12\FLU\Fluent\SYS.1-10-00074.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 74 iterations on 2 compute nodes
+  Average wall-clock time per iteration:              0.020 sec
+  Global reductions per iteration:                       97 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                          915 messages
+  Data transfer per iteration:                        0.087 MB
+  LE solves per iteration:                                2 solves
+  LE wall-clock time per iteration:                   0.013 sec (66.5%)
+  LE global solves per iteration:                         4 solves
+  LE global wall-clock time per iteration:            0.000 sec (1.0%)
+  LE global matrix maximum size:                        31
+  AMG cycles per iteration:                           4.095 cycles
+  Relaxation sweeps per iteration:                      413 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              363
+
+  Total wall-clock time:                              1.458 sec
+
