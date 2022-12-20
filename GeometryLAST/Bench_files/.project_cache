@@ -4,14 +4,13 @@ dp0/FLU/Fluent/fluent-999999-error.log
 dp0/FLU/Fluent/report-def-0-rfile.out
 dp0/FLU/Fluent/report-drag-rfile.out
 dp0/FLU/Fluent/report-lift-rfile.out
+dp0/FLU/Fluent/SYS-Setup-Output.cas.h5
 dp0/FLU/Fluent/SYS.2-11-00082.dat.h5
 dp0/FLU/Fluent/SYS.2-11.cas.h5
-dp0/FLU/Fluent/SYS.2-Setup-Output.cas.h5
 dp0/FLU/Fluent/SYS.2.ip
 dp0/FLU/Fluent/SYS.2.set
 dp0/Geom/DM/Geom.agdb
 dp0/global/MECH/SYS.mshdb
-dp0/SYS/MECH/SYS.2.msh
 dp0/SYS/MECH/SYS.msh
 dp0/act.dat
 dp0/designPoint.wbdp
@@ -170,6 +169,7 @@ progress_files/dp9/FLU/Fluent/SolutionMonitor.gz
 progress_files/dp9/FLU/Fluent/yplus-x.png
 session_files/journal1.wbjn
 session_files/journal10.wbjn
+session_files/journal11.wbjn
 session_files/journal2.wbjn
 session_files/journal3.wbjn
 session_files/journal4.wbjn
