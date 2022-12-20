@@ -1,7 +1,7 @@
 <FluentXMLReport>
 <version>
 Fluent
-Version: 2d, pbns, S-A (2d, pressure-based, Spalart-Allmaras)
+Version: 2d, dp, pbns, S-A (2d, double precision, pressure-based, Spalart-Allmaras)
 Release: 21.2.0
 Title: 
 </version>
@@ -102,9 +102,10 @@ Boundary Conditions
 
       inlet
 
-         Condition                  Value   
-         --------------------------------
-         Velocity Magnitude [m/s]   30      
+         Condition                   Value   
+         ---------------------------------
+         Velocity Magnitude [m/s]    30      
+         Turbulent Viscosity Ratio   4       
 
       outlet
 

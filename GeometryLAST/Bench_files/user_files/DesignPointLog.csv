@@ -87,3 +87,39 @@ DP 21,0.765966,-8.5,-343.71356,8.7837133
 # A non parametric change occurred and invalidated design point results.
 # 12/20/2022 12:26:09
 # 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 12/20/2022 16:06:20
+# 
+# 
+# 12/20/2022 16:17:00
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P1 - Distance_FLoor [m],P2 - Angle_Flap [degree],P3 - report-lift-op [N],P4 - report-drag-op [N]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3,P4
+DP 1,0.037506,0,-750.442,64.117291
+DP 2,0.047386,0,-888.87257,52.593815
+DP 3,0.057266,0,-951.60467,42.10386
+DP 4,0.067526,0,-963.77656,34.899422
+DP 5,0.077406,0,-969.63342,30.020502
+DP 6,0.097546,0,-889.8727,23.537754
+DP 7,0.117306,0,-811.98218,19.81107
+DP 8,0.167466,0,-676.66527,15.067694
+DP 9,0.242326,0,-581.79942,12.413125
+DP 10,0.765966,0,-468.30605,12.352776
+DP 11,0.036366,-8.5,-676.24935,42.221015
+DP 12,0.037506,-8.5,-683.80403,41.483924
+DP 13,0.047386,-8.5,-789.27941,32.2891
+DP 14,0.057266,-8.5,-820.73472,25.454115
+DP 15,0.067526,-8.5,-792.23819,20.603495
+DP 16,0.077406,-8.5,-738.95113,17.548392
+DP 17,0.097546,-8.5,-652.23617,13.611584
+DP 18,0.117306,-8.5,-587.10402,11.422384
+DP 19,0.167466,-8.5,-489.1595,8.9444648
+DP 20,0.242326,-8.5,-421.88144,7.5857182
+DP 21,0.765966,-8.5,-344.49974,7.5927268
+# 
+# A non parametric change occurred and invalidated design point results.
+# 12/20/2022 17:12:46
+# 
