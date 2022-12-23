@@ -102,10 +102,9 @@ Boundary Conditions
 
       inlet
 
-         Condition                   Value   
-         ---------------------------------
-         Velocity Magnitude [m/s]    30      
-         Turbulent Viscosity Ratio   0.2     
+         Condition                  Value   
+         --------------------------------
+         Velocity Magnitude [m/s]   30      
 
       outlet
 
@@ -227,7 +226,7 @@ Solver Settings
       Variable                       Scheme                
       --------------------------------------------------
       Pressure                       Second Order          
-      Momentum                       Second Order Upwind   
+      Momentum                       First Order Upwind    
       Modified Turbulent Viscosity   Second Order Upwind   
 
    Solution Limits

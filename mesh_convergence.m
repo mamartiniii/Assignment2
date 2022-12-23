@@ -35,3 +35,9 @@ plot(cellvect, ratio, 'o', "LineWidth",3)
 grid on
 xlabel("n mesh cells")
 ylabel("cL/cD")
+
+figure 
+plot(cellvect, Lvect, 'o')
+
+figure 
+plot(cellvect, Dvect, 'o')

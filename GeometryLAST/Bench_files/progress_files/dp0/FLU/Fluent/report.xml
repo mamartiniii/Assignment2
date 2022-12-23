@@ -223,11 +223,11 @@ Solver Settings
 
    Discretization Scheme
 
-      Variable                       Scheme               
-      -------------------------------------------------
-      Pressure                       Second Order         
-      Momentum                       First Order Upwind   
-      Modified Turbulent Viscosity   First Order Upwind   
+      Variable                       Scheme                
+      --------------------------------------------------
+      Pressure                       Second Order          
+      Momentum                       First Order Upwind    
+      Modified Turbulent Viscosity   Second Order Upwind   
 
    Solution Limits
 
