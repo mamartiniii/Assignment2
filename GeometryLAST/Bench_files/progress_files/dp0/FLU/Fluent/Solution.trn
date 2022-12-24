@@ -1,0 +1,1159 @@
+
+Build Time: May 28 2021 13:54:23 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v212/fluent/ntbin/win64/fluent.exe
+
+--------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID   Vendor                          
+--------------------------------------------------------------------------------
+n1    STI-WIN10-ax029  2/3  Windows-x64  8764  Intel(R) Xeon(R) Gold 6248R     
+n0*   STI-WIN10-ax029  1/3  Windows-x64  9904  Intel(R) Xeon(R) Gold 6248R     
+host  STI-WIN10-ax029       Windows-x64  8616  Intel(R) Xeon(R) Gold 6248R     
+
+MPI Option Selected: intel
+Selected system interconnect: default
+--------------------------------------------------------------------------------
+
+Cortex Process ID: 6056 
+License Server Path: 1055@siclic1.epfl.ch 
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from STI-WIN10-ax029:"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+      200670 cells,     1 cell zone  ...
+         200670 mixed cells,  zone id: 2
+      309976 faces,    11 face zones ...
+         307937 2D interior faces,  zone id: 1
+            175 2D velocity-inlet faces,  zone id: 5
+            256 2D pressure-outlet faces,  zone id: 6
+            563 2D wall faces,  zone id: 7
+            210 2D wall faces,  zone id: 8
+            239 2D wall faces,  zone id: 9
+            229 2D wall faces,  zone id: 10
+            175 2D wall faces,  zone id: 11
+            183 2D wall faces,  zone id: 12
+              5 2D wall faces,  zone id: 13
+              4 2D wall faces,  zone id: 14
+      109305 nodes,     1 node zone  ...
+  Done.
+
+
+
+Building...
+     mesh
+	distributing mesh
+		parts..,
+		faces..,
+		nodes..,
+		cells..,
+        bandwidth reduction using Reverse Cuthill-McKee: 100935/415 = 243.217
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	flapte
+	mainte
+	flaplower
+	flapupper
+	mainlower
+	mainupper
+	wall
+	belt_ground
+	outlet
+	inlet
+	interior-surface_body
+	surface_bodySetting surface_body (mixture) ... Done.
+ Setting zone id of surface_body to 2.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of inlet to 5.
+ Setting zone id of outlet to 6.
+ Setting zone id of belt_ground to 7.
+ Setting zone id of wall to 8.
+ Setting zone id of mainupper to 9.
+ Setting zone id of mainlower to 10.
+ Setting zone id of flapupper to 11.
+ Setting zone id of flaplower to 12.
+ Setting zone id of mainte to 13.
+ Setting zone id of flapte to 14.
+Done.
+Setting surface_body (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting belt_ground (mixture) ... Done.
+Setting wall (mixture) ... Done.
+Setting mainupper (mixture) ... Done.
+Setting mainlower (mixture) ... Done.
+Setting flapupper (mixture) ... Done.
+Setting flaplower (mixture) ... Done.
+Setting mainte (mixture) ... Done.
+Setting flapte (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+
+Reading from STI-WIN10-ax029:"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-43-00500.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   500  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:00:00  500
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   501  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:08:19  499
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   502  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:08:18  498
+   503  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:06:38  497
+   504  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:06:57  496
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   505  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:07:12  495
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   506  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:07:23  494
+   507  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:07:33  493
+   508  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:07:40  492
+   509  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:07:45  491
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   510  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:06:11  490
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   511  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:06:34  489
+   512  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:06:52  488
+   513  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:07:07  487
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   514  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:07:18  486
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   515  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:05:50  485
+   516  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:06:16  484
+   517  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:06:37  483
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   518  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:06:53  482
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   519  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:07:06  481
+   520  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:07:16  480
+   521  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:07:24  479
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   522  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:07:30  478
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   523  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:07:35  477
+   524  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:07:38  476
+   525  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:07:41  475
+   526  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:09:17  474
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   527  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:07:25  473
+   528  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:07:30  472
+   529  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:07:33  471
+   530  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:07:36  470
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   531  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:07:38  469
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   532  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:06:05  468
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   533  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:06:25  467
+   534  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:06:41  466
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   535  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:06:53  465
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   536  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:07:02  464
+   537  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:07:10  463
+   538  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:07:15  462
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   539  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:05:48  461
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   540  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:06:09  460
+   541  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:06:27  459
+   542  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:06:40  458
+   543  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:06:51  457
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   544  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:05:28  456
+   545  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:05:53  455
+   546  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:06:12  454
+   547  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:06:28  453
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   548  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:06:40  452
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   549  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:06:50  451
+   550  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:06:57  450
+   551  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:05:33  449
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   552  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:05:55  448
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   553  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:06:13  447
+   554  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:06:27  446
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   555  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:06:38  445
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   556  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:06:46  444
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   557  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:06:53  443
+   558  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:06:58  442
+   559  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:07:02  441
+   560  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:07:05  440
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   561  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:05:39  439
+   562  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:05:58  438
+   563  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:06:13  437
+   564  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:06:25  436
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   565  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:06:34  435
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   566  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:06:42  434
+   567  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:05:21  433
+   568  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:05:42  432
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   569  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:05:59  431
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   570  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:06:13  430
+   571  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:06:23  429
+   572  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:06:32  428
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   573  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:06:38  427
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   574  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:05:18  426
+   575  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:05:38  425
+   576  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:05:55  424
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   577  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:06:08  423
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   578  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:06:18  422
+   579  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:06:26  421
+   580  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:06:32  420
+   581  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:06:37  419
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   582  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:05:17  418
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   583  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:05:36  417
+   584  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:05:51  416
+   585  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:06:03  415
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   586  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:04:50  414
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   587  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:05:14  413
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   588  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:05:33  412
+   589  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:05:48  411
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   590  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:06:00  410
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   591  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:06:09  409
+   592  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:06:16  408
+   593  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:05:00  407
+   594  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:05:21  406
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   595  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:05:37  405
+   596  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:05:50  404
+   597  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:06:00  403
+   598  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:06:07  402
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   599  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:07:34  401
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   600  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:07:22  400
+   601  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:07:12  399
+   602  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:07:05  398
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   603  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:06:58  397
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   604  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:06:53  396
+   605  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:08:08  395
+   606  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:07:48  394
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   607  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:07:32  393
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   608  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:07:19  392
+   609  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:07:09  391
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   610  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:07:00  390
+   611  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:05:35  389
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   612  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:05:45  388
+   613  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:05:53  387
+   614  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:05:59  386
+   615  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:06:03  385
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   616  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:06:07  384
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   617  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:06:09  383
+   618  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:04:54  382
+   619  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:05:11  381
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   620  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:05:24  380
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   621  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:05:35  379
+   622  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:05:43  378
+   623  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:05:49  377
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   624  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:04:38  376
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   625  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:04:57  375
+   626  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:05:12  374
+   627  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:05:23  373
+   628  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:05:32  372
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   629  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:04:25  371
+   630  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:04:46  370
+   631  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:05:02  369
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   632  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:05:14  368
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   633  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:05:24  367
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   634  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:04:19  366
+   635  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:04:39  365
+   636  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:04:56  364
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   637  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:05:08  363
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   638  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:04:06  362
+   639  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:04:29  361
+   640  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:04:46  360
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   641  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:05:00  359
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   642  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:05:11  358
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   643  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:05:20  357
+   644  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:05:26  356
+   645  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:04:20  355
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   646  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:04:38  354
+   647  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:04:53  353
+   648  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:05:04  352
+   649  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:05:13  351
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   650  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:04:09  350
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   651  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:04:29  349
+   652  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:04:44  348
+   653  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:04:56  347
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   654  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:05:05  346
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   655  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:04:03  345
+   656  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:04:23  344
+   657  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:04:38  343
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   658  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:04:50  342
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   659  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:05:00  341
+   660  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:05:07  340
+   661  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:04:05  339
+   662  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:04:23  338
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   663  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:04:37  337
+   664  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:04:48  336
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   665  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:04:57  335
+   666  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:03:57  334
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   667  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:04:16  333
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   668  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:04:30  332
+   669  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:04:42  331
+   670  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:03:45  330
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   671  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:04:05  329
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   672  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:04:21  328
+   673  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:04:34  327
+   674  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:04:43  326
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   675  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:04:51  325
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   676  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:04:57  324
+   677  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:05:01  323
+   678  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:05:05  322
+   679  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:05:07  321
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   680  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:05:09  320
+   681  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:04:06  319
+   682  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:04:20  318
+   683  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:04:31  317
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   684  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:04:39  316
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   685  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:04:46  315
+   686  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:04:51  314
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   687  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:04:54  313
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   688  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:03:55  312
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   689  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:04:09  311
+   690  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:04:21  310
+   691  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:04:30  309
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   692  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:03:35  308
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   693  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:03:53  307
+   694  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:04:07  306
+   695  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:04:18  305
+   696  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:04:26  304
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   697  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:04:33  303
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   698  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:03:38  302
+   699  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:03:54  301
+   700  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:04:06  300
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   701  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:04:16  299
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   702  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:04:24  298
+   703  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:04:30  297
+   704  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:03:35  296
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   705  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:03:51  295
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   706  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:04:03  294
+   707  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:04:12  293
+   708  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:03:21  292
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   709  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:03:38  291
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   710  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:03:52  290
+   711  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:03:05  289
+   712  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:04:23  288
+   713  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:03:29  287
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   714  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:03:44  286
+   715  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:03:56  285
+   716  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:04:05  284
+   717  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:04:12  283
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   718  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:04:17  282
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   719  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:03:25  281
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   720  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:03:39  280
+   721  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:03:51  279
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   722  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:03:59  278
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   723  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:04:06  277
+   724  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:03:16  276
+   725  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:03:31  275
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   726  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:03:43  274
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   727  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:03:53  273
+   728  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:03:05  272
+   729  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:03:22  271
+   730  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:03:35  270
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   731  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:03:45  269
+   732  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:03:53  268
+   733  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:03:59  267
+   734  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:04:04  266
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   735  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:03:14  265
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   736  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:03:28  264
+   737  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:03:38  263
+   738  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:03:46  262
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   739  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:03:52  261
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   740  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:03:05  260
+   741  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:03:19  259
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   742  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:03:31  258
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   743  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:03:39  257
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   744  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:02:55  256
+   745  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:03:10  255
+   746  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:03:22  254
+   747  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:03:32  253
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   748  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:02:49  252
+   749  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:03:05  251
+   750  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:04:07  250
+   751  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:04:07  249
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   752  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:03:17  248
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   753  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:03:26  247
+   754  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:04:23  246
+   755  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:04:18  245
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   756  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:04:15  244
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   757  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:04:11  243
+   758  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:04:09  242
+   759  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:03:18  241
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   760  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:03:26  240
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   761  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:03:32  239
+   762  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:03:36  238
+   763  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:02:52  237
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   764  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:03:04  236
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   765  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:03:14  235
+   766  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:03:21  234
+   767  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:03:27  233
+   768  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:03:31  232
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   769  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:03:34  231
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   770  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:03:37  230
+   771  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:02:53  229
+   772  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:03:03  228
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   773  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:03:11  227
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   774  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:03:18  226
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   775  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:03:22  225
+   776  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:02:41  224
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   777  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:02:53  223
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   778  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:03:02  222
+   779  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:03:09  221
+   780  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:02:31  220
+   781  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:02:44  219
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   782  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:02:54  218
+   783  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:03:02  217
+   784  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:03:08  216
+   785  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:03:13  215
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   786  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:03:16  214
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   787  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:03:19  213
+   788  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:02:38  212
+   789  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:02:48  211
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   790  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:02:56  210
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   791  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:03:02  209
+   792  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:02:25  208
+   793  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:02:37  207
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   794  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:02:46  206
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   795  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:02:53  205
+   796  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:02:18  204
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   797  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:02:30  203
+   798  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:02:40  202
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   799  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:02:48  201
+   800  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:02:53  200
+   801  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:02:18  199
+   802  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:02:29  198
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   803  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:02:38  197
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   804  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:02:45  196
+   805  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:02:51  195
+   806  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:02:55  194
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   807  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:02:58  193
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   808  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:02:21  192
+   809  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:02:31  191
+   810  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:02:38  190
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   811  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:02:43  189
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   812  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:02:10  188
+   813  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:02:21  187
+   814  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:02:29  186
+   815  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:02:36  185
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   816  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:02:04  184
+   817  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:02:15  183
+   818  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:02:24  182
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   819  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:02:31  181
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   820  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:02:36  180
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   821  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:02:40  179
+   822  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:02:43  178
+   823  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:02:45  177
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   824  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:02:11  176
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   825  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:02:19  175
+   826  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:02:26  174
+   827  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:02:30  173
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   828  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:02:00  172
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   829  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:02:09  171
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   830  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:02:17  170
+   831  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:02:23  169
+   832  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:01:53  168
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   833  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:02:37  167
+   834  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:02:38  166
+   835  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:02:39  165
+   836  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:02:39  164
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   837  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:02:06  163
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   838  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:02:13  162
+   839  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:02:18  161
+   840  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:02:22  160
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   841  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:02:24  159
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   842  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:02:26  158
+   843  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:01:56  157
+   844  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:02:04  156
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   845  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:02:09  155
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   846  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:02:14  154
+   847  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:01:46  153
+   848  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:01:55  152
+   849  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:02:01  151
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   850  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:02:06  150
+   851  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:01:41  149
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   852  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:01:49  148
+   853  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:01:56  147
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   854  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:02:02  146
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   855  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:01:37  145
+   856  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:01:46  144
+   857  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:01:52  143
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   858  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:01:58  142
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   859  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:02:02  141
+   860  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:02:05  140
+   861  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:01:39  139
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   862  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:01:46  138
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   863  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:01:52  137
+   864  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:01:56  136
+   865  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:01:59  135
+   866  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:01:35  134
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   867  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:01:42  133
+   868  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:01:47  132
+   869  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:01:51  131
+   870  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:01:28  130
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   871  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:01:36  129
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   872  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:01:42  128
+   873  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:01:46  127
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   874  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:01:24  126
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   875  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:01:32  125
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   876  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:01:38  124
+   877  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:01:42  123
+   878  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:01:45  122
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   879  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:01:24  121
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   880  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:01:30  120
+   881  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:01:36  119
+   882  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:01:39  118
+   883  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:01:42  117
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   884  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:01:44  116
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   885  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:01:23  115
+   886  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:01:28  114
+   887  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:01:33  113
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   888  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:01:36  112
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   889  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:01:16  111
+   890  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:01:22  110
+   891  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:01:27  109
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   892  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:01:31  108
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   893  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:01:12  107
+   894  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:01:18  106
+   895  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:01:23  105
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   896  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:01:26  104
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   897  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:01:29  103
+   898  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:01:31  102
+   899  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:01:12  101
+   900  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:01:17  100
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   901  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:01:21   99
+   902  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:01:24   98
+   903  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:01:26   97
+   904  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:01:08   96
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   905  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:01:13   95
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   906  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:01:16   94
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   907  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:01:19   93
+   908  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:01:03   92
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   909  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:01:08   91
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   910  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:01:12   90
+   911  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:01:14   89
+   912  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:00:59   88
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   913  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:01:04   87
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   914  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:01:08   86
+   915  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:01:11   85
+   916  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:01:13   84
+   917  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:01:14   83
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   918  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:01:15   82
+   919  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:01:15   81
+   920  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:01:16   80
+   921  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:01:15   79
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   922  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:01:15   78
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   923  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:00:59   77
+   924  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:01:02   76
+   925  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:01:04   75
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   926  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:01:05   74
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   927  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:00:52   73
+   928  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:00:55   72
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   929  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:00:58   71
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   930  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:00:59   70
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   931  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:00:47   69
+   932  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:00:51   68
+   933  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:00:53   67
+   934  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:00:55   66
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   935  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:00:56   65
+   936  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:00:57   64
+   937  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:00:58   63
+   938  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:00:45   62
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   939  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:00:48   61
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   940  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:00:50   60
+   941  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:00:51   59
+   942  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:00:40   58
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   943  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:00:43   57
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   944  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:00:45   56
+   945  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:00:46   55
+   946  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:00:36   54
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   947  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:00:39   53
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   948  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:00:41   52
+   949  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:00:42   51
+   950  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:00:43   50
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   951  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:00:44   49
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   952  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:00:44   48
+   953  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:00:44   47
+   954  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:00:34   46
+   955  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:00:36   45
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   956  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:00:37   44
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   957  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:00:37   43
+   958  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:00:38   42
+   959  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:00:29   41
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   960  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:00:31   40
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   961  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:00:32   39
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   962  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:00:32   38
+   963  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:00:25   37
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   964  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:00:27   36
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   965  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:00:28   35
+   966  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:00:28   34
+   967  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:00:22   33
+   968  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:00:24   32
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   969  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:00:24   31
+   970  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:00:25   30
+   971  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:00:25   29
+   972  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:00:25   28
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   973  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:00:25   27
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   974  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:00:19   26
+   975  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:00:20   25
+   976  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:00:20   24
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   977  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:00:20   23
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   978  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:00:15   22
+   979  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:00:16   21
+   980  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:00:16   20
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   981  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:00:16   19
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   982  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:00:12   18
+   983  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:00:13   17
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   984  8.7786e-03  1.2602e-05  4.0516e-06  5.3140e-05  0:00:13   16
+   985  1.5883e-02  1.1130e-05  6.3615e-06  9.4919e-05  0:00:12   15
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   986  1.3738e-02  9.4783e-06  4.8961e-06  3.8542e-05  0:00:09   14
+   987  8.9684e-03  9.0802e-06  2.7090e-06  2.9658e-05  0:00:10   13
+   988  7.2788e-03  1.0579e-05  2.8736e-06  3.0361e-05  0:00:09   12
+   989  1.0796e-02  1.0200e-05  4.5357e-06  2.9439e-04  0:00:09   11
+
+ Reversed flow on 5 faces (0.9% area) of pressure-outlet 6.
+   990  1.5314e-02  8.3414e-06  6.3182e-06  6.8275e-05  0:00:09   10
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   991  1.3037e-02  9.2564e-06  4.5814e-06  5.1757e-05  0:00:08    9
+   992  6.3094e-03  1.0779e-05  2.8043e-06  6.0337e-05  0:00:07    8
+   993  1.3730e-02  1.3535e-05  5.6059e-06  1.0369e-04  0:00:07    7
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+   994  1.6637e-02  1.0009e-05  6.1779e-06  4.2286e-05  0:00:04    6
+
+ Reversed flow on 2 faces (0.4% area) of pressure-outlet 6.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+   995  1.1445e-02  9.1209e-06  3.7327e-06  3.3681e-05  0:00:04    5
+   996  6.4855e-03  9.1790e-06  2.0319e-06  3.1333e-05  0:00:03    4
+   997  7.5616e-03  1.0276e-05  3.2165e-06  2.3656e-04  0:00:03    3
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   998  1.1912e-02  8.5612e-06  4.8608e-06  6.3711e-05  0:00:02    2
+
+ Reversed flow on 4 faces (0.7% area) of pressure-outlet 6.
+   999  1.2642e-02  6.9664e-06  4.3880e-06  4.3968e-05  0:00:01    1
+  1000  7.1139e-03  8.0055e-06  2.5214e-06  5.9925e-05  0:00:00    0
+Registering ReportDefFiles, ("Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\.\\report-def-0-rfile.out" "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\.\\report-lift-rfile.out" "Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\.\\report-drag-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\frsala\\AppData\\Local\\Temp\\flntgz-86162 ...
+Done.
+
+
+number tracked = 175, escaped = 142, incomplete = 33
+Writing data to Z:\\NFS_FRASALA\\A_PROJECT_NFS\\Assignment2\\GeometryLAST\\Bench_files\\dp0\\FLU\\Fluent\\SYS.ip ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	nut
+Done.
+
+Writing to STI-WIN10-ax029:"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-44.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      200670 cells,     1 zone  ...
+      309976 faces,    11 zones ...
+      109305 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to STI-WIN10-ax029:"Z:\NFS_FRASALA\A_PROJECT_NFS\Assignment2\GeometryLAST\Bench_files\dp0\FLU\Fluent\SYS-44-01000.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 500 iterations on 2 compute nodes
+  Average wall-clock time per iteration:              0.761 sec
+  Global reductions per iteration:                      105 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                         1992 messages
+  Data transfer per iteration:                        1.236 MB
+  LE solves per iteration:                                2 solves
+  LE wall-clock time per iteration:                   0.532 sec (69.9%)
+  LE global solves per iteration:                         5 solves
+  LE global wall-clock time per iteration:            0.001 sec (0.1%)
+  LE global matrix maximum size:                        15
+  AMG cycles per iteration:                           5.938 cycles
+  Relaxation sweeps per iteration:                      946 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              363
+
+  Total wall-clock time:                            380.604 sec
+

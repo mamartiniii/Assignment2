@@ -1,7 +1,7 @@
 <FluentXMLReport>
 <version>
 Fluent
-Version: 2d, dp, pbns, S-A (2d, double precision, pressure-based, Spalart-Allmaras)
+Version: 2d, dp, pbns, sstkw (2d, double precision, pressure-based, SST k-omega)
 Release: 21.2.0
 Title: 
 </version>
@@ -11,25 +11,24 @@ Title:
 Models
 ------
 
-   Model                        Settings                            
-   --------------------------------------------------------------
-   Space                        2D                                  
-   Time                         Steady                              
-   Viscous                      Spalart-Allmaras turbulence model   
-   Production Option            Vorticity                           
-   Heat Transfer                Disabled                            
-   Solidification and Melting   Disabled                            
-   Species                      Disabled                            
-   Coupled Dispersed Phase      Disabled                            
-   NOx Pollutants               Disabled                            
-   SOx Pollutants               Disabled                            
-   Soot                         Disabled                            
-   Mercury Pollutants           Disabled                            
-   Structure                    Disabled                            
-   Acoustics                    Disabled                            
-   Eulerian Wall Film           Disabled                            
-   Potential/Li-ion Battery     Disabled                            
-   Multiphase                   Disabled                            
+   Model                        Settings                       
+   ---------------------------------------------------------
+   Space                        2D                             
+   Time                         Steady                         
+   Viscous                      SST k-omega turbulence model   
+   Heat Transfer                Disabled                       
+   Solidification and Melting   Disabled                       
+   Species                      Disabled                       
+   Coupled Dispersed Phase      Disabled                       
+   NOx Pollutants               Disabled                       
+   SOx Pollutants               Disabled                       
+   Soot                         Disabled                       
+   Mercury Pollutants           Disabled                       
+   Structure                    Disabled                       
+   Acoustics                    Disabled                       
+   Eulerian Wall Film           Disabled                       
+   Potential/Li-ion Battery     Disabled                       
+   Multiphase                   Disabled                       
 
 </Models>
 
@@ -185,10 +184,10 @@ Solver Settings
 
    Equations
 
-      Equation                       Solved   
-      -------------------------------------
-      Flow                           yes      
-      Modified Turbulent Viscosity   yes      
+      Equation     Solved   
+      -------------------
+      Flow         yes      
+      Turbulence   yes      
 
    Numerics
 
@@ -198,21 +197,23 @@ Solver Settings
 
    Pseudo Transient Explicit Relaxation Factors
 
-      Variable                       Relaxation Factor   
-      ------------------------------------------------
-      Density                        1                   
-      Body Forces                    1                   
-      Modified Turbulent Viscosity   0.75                
-      Turbulent Viscosity            1                   
-      Explicit Momentum              0.5                 
-      Explicit Pressure              0.5                 
+      Variable                    Relaxation Factor   
+      ---------------------------------------------
+      Density                     1                   
+      Body Forces                 1                   
+      Turbulent Kinetic Energy    0.75                
+      Specific Dissipation Rate   0.75                
+      Turbulent Viscosity         1                   
+      Explicit Momentum           0.5                 
+      Explicit Pressure           0.5                 
 
    Linear Solver
 
-      Variable                       Solver Type   Termination Criterion   Residual Reduction Tolerance   
-      -------------------------------------------------------------------------------------------------
-      Flow                           F-Cycle       0.1                                                    
-      Modified Turbulent Viscosity   F-Cycle       0.1                                                    
+      Variable                    Solver Type   Termination Criterion   Residual Reduction Tolerance   
+      ----------------------------------------------------------------------------------------------
+      Flow                        F-Cycle       0.1                                                    
+      Turbulent Kinetic Energy    F-Cycle       0.1                                                    
+      Specific Dissipation Rate   F-Cycle       0.1                                                    
 
    Pressure-Velocity Coupling
 
@@ -223,21 +224,24 @@ Solver Settings
 
    Discretization Scheme
 
-      Variable                       Scheme                
-      --------------------------------------------------
-      Pressure                       Second Order          
-      Momentum                       First Order Upwind    
-      Modified Turbulent Viscosity   Second Order Upwind   
+      Variable                    Scheme                
+      -----------------------------------------------
+      Pressure                    Second Order          
+      Momentum                    First Order Upwind    
+      Turbulent Kinetic Energy    Second Order Upwind   
+      Specific Dissipation Rate   Second Order Upwind   
 
    Solution Limits
 
-      Quantity                        Limit    
-      --------------------------------------
-      Minimum Absolute Pressure       1        
-      Maximum Absolute Pressure       5e+10    
-      Minimum Temperature             1        
-      Maximum Temperature             5000     
-      Maximum Turb. Viscosity Ratio   100000   
+      Quantity                         Limit    
+      ---------------------------------------
+      Minimum Absolute Pressure        1        
+      Maximum Absolute Pressure        5e+10    
+      Minimum Temperature              1        
+      Maximum Temperature              5000     
+      Minimum Turb. Kinetic Energy     1e-14    
+      Minimum Spec. Dissipation Rate   1e-20    
+      Maximum Turb. Viscosity Ratio    100000   
 
 </SolverSettings>
 
