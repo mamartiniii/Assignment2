@@ -227,7 +227,7 @@ Solver Settings
       Variable                    Scheme                
       -----------------------------------------------
       Pressure                    Second Order          
-      Momentum                    First Order Upwind    
+      Momentum                    Second Order Upwind   
       Turbulent Kinetic Energy    Second Order Upwind   
       Specific Dissipation Rate   Second Order Upwind   
 

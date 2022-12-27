@@ -276,7 +276,6 @@ dp6/
 dp7/
 dp8/
 dp9/
-dpall/
 progress_files/
 session_files/
 dp8/FLU/
@@ -286,11 +285,7 @@ dp8/SYS/
 dp8/FLU/Fluent/
 dp8/Geom/DM/
 dp8/global/MECH/
-dp8/global/MECH/SYS/
 dp8/SYS/MECH/
-dpall/global/
-dpall/global/ACT/
-dpall/global/ACT/extensions/
 progress_files/dp0/
 progress_files/dp1/
 progress_files/dp10/
