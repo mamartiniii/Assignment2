@@ -10,3 +10,19 @@
 # The following header line defines the name of the columns by reference to the parameters.
 Name,P1
 DP 0,0.19515665262394688
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/02/2023 15:06:15
+# 
+# 
+# 01/02/2023 15:15:29
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P1 - DistFl [m],P2 - report-cd-op,P3 - report-cl-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3
+DP 1,0.03956,0.056102352,-1.3868374
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/02/2023 15:18:02
+# 
