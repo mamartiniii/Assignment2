@@ -5,30 +5,30 @@ Executable Path: C:/PROGRA~1/ANSYSI~1/v212/fluent/ntbin/win64/fluent.exe
 ---------------------------------------------------------------------------------
 ID    Hostname         Core  O.S.         PID    Vendor                          
 ---------------------------------------------------------------------------------
-n1    STI-WIN10-ax012  2/3  Windows-x64  11940  Intel(R) Xeon(R) Gold 6248R     
-n0*   STI-WIN10-ax012  1/3  Windows-x64  6344   Intel(R) Xeon(R) Gold 6248R     
-host  STI-WIN10-ax012       Windows-x64  9004   Intel(R) Xeon(R) Gold 6248R     
+n1    STI-WIN10-ax025  2/3  Windows-x64  11472  Intel(R) Xeon(R) Gold 6248R     
+n0*   STI-WIN10-ax025  1/3  Windows-x64  11284  Intel(R) Xeon(R) Gold 6248R     
+host  STI-WIN10-ax025       Windows-x64  1976   Intel(R) Xeon(R) Gold 6248R     
 
 MPI Option Selected: intel
 Selected system interconnect: default
 ---------------------------------------------------------------------------------
 
-Cortex Process ID: 1512 
+Cortex Process ID: 8944 
 License Server Path: 1055@siclic1.epfl.ch 
-Reading "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\SYS\MECH\SYS.1.msh"...
+Reading "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\SYS\MECH\SYS.msh"...
 Buffering for file scan...
 
-  242991 nodes, binary.
-    2533 nodes, binary.
-  700698 2D interior faces, zone  1, binary.
+  216588 nodes, binary.
+    2522 nodes, binary.
+  621478 2D interior faces, zone  1, binary.
      348 2D wall faces, zone  5, binary.
      325 2D wall faces, zone  6, binary.
        7 2D wall faces, zone  7, binary.
      325 2D velocity-inlet faces, zone  8, binary.
-     368 2D pressure-outlet faces, zone  9, binary.
+     357 2D pressure-outlet faces, zone  9, binary.
      382 2D wall faces, zone 10, binary.
      778 2D wall faces, zone 11, binary.
-  457707 mixed cells, zone  2, binary.
+  404890 mixed cells, zone  2, binary.
 
 
 
@@ -43,7 +43,7 @@ Building...
 		faces..,
 		nodes..,
 		cells..,
-        bandwidth reduction using Reverse Cuthill-McKee: 227623/701 = 324.712
+        bandwidth reduction using Reverse Cuthill-McKee: 203622/632 = 322.187
      materials,
      interface,
      domains,
@@ -85,7 +85,7 @@ Preparing mesh for display...
 Done.
 "Updating Setup cell..."
 "Updating Solution cell..."
-Reading C:\\Users\\mmartini\\Downloads\\Assignment2\\Geometry_2023\\Main_files\\dp11\\FLU\\Fluent\\SYS.ip...
+Reading C:\\Users\\mmartini\\Downloads\\Assignment2\\Geometry_2023\\Main_files\\dp11\\FLU\\Fluent\\SYS.1.ip...
 Reading IP data ...
 	x-coord
 	y-coord
@@ -101,123 +101,112 @@ Reading IP data ...
 Fast-loading "C:\PROGRA~1\ANSYSI~1\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
 Done.
 
-Writing to STI-WIN10-ax012:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\SYS.1-Setup-Output.cas.h5" in NODE0 mode and compression level 1 ...
+Writing to STI-WIN10-ax025:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\SYS-Setup-Output.cas.h5" in NODE0 mode and compression level 1 ...
   Writing mesh ...
-      457707 cells,     1 zone  ...
-      703231 faces,     8 zones ...
-      245524 nodes,     1 zone  ...
+      404890 cells,     1 zone  ...
+      624000 faces,     8 zones ...
+      219110 nodes,     1 zone  ...
   Done.
 Done.
 Overwriting "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\.\\report-cl-rfile.out"  of Report File "report-cl-rfile"
 Overwriting "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\.\\report-cd-rfile.out"  of Report File "report-cd-rfile"
 
   iter  continuity  x-velocity  y-velocity         nut     time/iter
-     1  1.0000e+00  2.7738e-04  7.2709e-05  2.3088e-02  0:09:58  299
+     1  1.0000e+00  4.8400e-04  5.4820e-05  1.9382e-02  0:04:59  299
         Stabilizing pressure coupled to enhance linear solver robustness.
-     2  5.9392e-01  1.8659e-04  5.6205e-05  5.8646e-03  0:11:55  298
+     2  5.9604e-01  3.4453e-04  5.5975e-05  5.6299e-03  0:11:55  298
         Stabilizing pressure coupled to enhance linear solver robustness.
-     3  3.6294e-01  1.1446e-04  3.3340e-05  1.8391e-03  0:13:28  297
+     3  3.8973e-01  2.0625e-04  4.6931e-05  1.8047e-03  0:11:29  297
         Stabilizing pressure coupled to enhance linear solver robustness.
-     4  2.5368e-01  8.3412e-05  2.1279e-05  9.9361e-04  0:14:41  296
+     4  2.1907e-01  1.2312e-04  2.6407e-05  7.8275e-04  0:13:06  296
         Stabilizing pressure coupled to enhance linear solver robustness.
-     5  1.9645e-01  7.1052e-05  1.5353e-05  9.6757e-04  0:16:37  295
+     5  1.4588e-01  8.1150e-05  1.7150e-05  5.4104e-04  0:13:24  295
         Stabilizing pressure coupled to enhance linear solver robustness.
-     6  1.5804e-01  6.6453e-05  1.2438e-05  1.0725e-03  0:18:09  294
+     6  1.1644e-01  6.2052e-05  1.2186e-05  4.7129e-04  0:14:36  294
         Stabilizing pressure coupled to enhance linear solver robustness.
-     7  1.2350e-01  5.9902e-05  9.9847e-06  1.0765e-03  0:19:21  293
+     7  9.3763e-02  5.2737e-05  9.4990e-06  4.8040e-04  0:14:34  293
         Stabilizing pressure coupled to enhance linear solver robustness.
-     8  9.9232e-02  5.5237e-05  8.1925e-06  9.5711e-04  0:20:18  292
+     8  7.6480e-02  5.0147e-05  7.7844e-06  4.7047e-04  0:14:32  292
         Stabilizing pressure coupled to enhance linear solver robustness.
-     9  8.2630e-02  5.0687e-05  6.6094e-06  7.6507e-04  0:21:02  291
+     9  6.2368e-02  4.7326e-05  6.6047e-06  4.4634e-04  0:14:30  291
         Stabilizing pressure coupled to enhance linear solver robustness.
-    10  7.0842e-02  4.6214e-05  5.3775e-06  5.6244e-04  0:21:36  290
+    10  5.3098e-02  4.7114e-05  5.7049e-06  4.0549e-04  0:15:26  290
         Stabilizing pressure coupled to enhance linear solver robustness.
-    11  6.0423e-02  4.0969e-05  4.3194e-06  3.9122e-04  0:22:02  289
-        Stabilizing pressure coupled to enhance linear solver robustness.
-
-  iter  continuity  x-velocity  y-velocity         nut     time/iter
-    12  5.1697e-02  3.5760e-05  3.5271e-06  2.6511e-04  0:22:22  288
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    13  4.3407e-02  3.0782e-05  2.8874e-06  1.8162e-04  0:21:40  287
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    14  3.6432e-02  2.6531e-05  2.4099e-06  1.2997e-04  0:21:05  286
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    15  3.0794e-02  2.2852e-05  2.0283e-06  1.0051e-04  0:20:36  285
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    16  2.6188e-02  1.9734e-05  1.7139e-06  8.4530e-05  0:21:10  284
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    17  2.2429e-02  1.7018e-05  1.4670e-06  7.5846e-05  0:21:35  283
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    18  1.9413e-02  1.4715e-05  1.2621e-06  6.9236e-05  0:22:51  282
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    19  1.7103e-02  1.2889e-05  1.1040e-06  6.2173e-05  0:22:54  281
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    20  1.4886e-02  1.1308e-05  9.4421e-07  5.5150e-05  0:22:55  280
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    21  1.3124e-02  9.9574e-06  8.1887e-07  4.8053e-05  0:22:55  279
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    22  1.1423e-02  8.7233e-06  7.0450e-07  4.1532e-05  0:21:59  278
+    11  4.5309e-02  4.5484e-05  5.0756e-06  3.5817e-04  0:15:11  289
         Stabilizing pressure coupled to enhance linear solver robustness.
 
   iter  continuity  x-velocity  y-velocity         nut     time/iter
-    23  9.9548e-03  7.6448e-06  6.0860e-07  3.5871e-05  0:22:08  277
+    12  3.9209e-02  4.2387e-05  4.5171e-06  3.1021e-04  0:15:57  288
         Stabilizing pressure coupled to enhance linear solver robustness.
-    24  8.9379e-03  6.7535e-06  5.3682e-07  3.0602e-05  0:21:19  276
+    13  3.4216e-02  3.8556e-05  4.0269e-06  2.6377e-04  0:15:35  287
         Stabilizing pressure coupled to enhance linear solver robustness.
-    25  7.7878e-03  5.9285e-06  4.5870e-07  2.6287e-05  0:21:35  275
+    14  2.9789e-02  3.4363e-05  3.5328e-06  2.1898e-04  0:15:17  286
         Stabilizing pressure coupled to enhance linear solver robustness.
-    26  6.8650e-03  5.2767e-06  3.9759e-07  2.2402e-05  0:20:51  274
+    15  2.5786e-02  3.0172e-05  3.0418e-06  1.7762e-04  0:15:59  285
         Stabilizing pressure coupled to enhance linear solver robustness.
-    27  6.0625e-03  4.6848e-06  3.4976e-07  1.9029e-05  0:21:10  273
-    28  5.3867e-03  4.1458e-06  3.0859e-07  1.5437e-05  0:18:41  272
+    16  2.2201e-02  2.6303e-05  2.6106e-06  1.4098e-04  0:15:35  284
         Stabilizing pressure coupled to enhance linear solver robustness.
-    29  4.6230e-03  3.5115e-06  2.7203e-07  1.3901e-05  0:18:31  271
+    17  1.9017e-02  2.2790e-05  2.2099e-06  1.1110e-04  0:16:12  283
         Stabilizing pressure coupled to enhance linear solver robustness.
-    30  4.2581e-03  3.2684e-06  2.4130e-07  1.2141e-05  0:20:09  270
+    18  1.6366e-02  1.9882e-05  1.8630e-06  8.7645e-05  0:15:44  282
         Stabilizing pressure coupled to enhance linear solver robustness.
-    31  3.8279e-03  3.0083e-06  2.1310e-07  1.0575e-05  0:19:39  269
+    19  1.4179e-02  1.7467e-05  1.5676e-06  7.0407e-05  0:16:17  281
         Stabilizing pressure coupled to enhance linear solver robustness.
-    32  3.4996e-03  2.7431e-06  1.9349e-07  9.3323e-06  0:19:14  268
+    20  1.2425e-02  1.5601e-05  1.3151e-06  5.7976e-05  0:15:47  280
         Stabilizing pressure coupled to enhance linear solver robustness.
-    33  3.1738e-03  2.5111e-06  1.7292e-07  8.1887e-06  0:18:53  267
+    21  1.0948e-02  1.3961e-05  1.1102e-06  4.9122e-05  0:17:14  279
         Stabilizing pressure coupled to enhance linear solver robustness.
-
-  iter  continuity  x-velocity  y-velocity         nut     time/iter
-    34  2.8661e-03  2.2874e-06  1.5607e-07  7.2879e-06  0:19:29  266
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    35  2.6111e-03  2.0901e-06  1.4134e-07  6.4742e-06  0:20:50  265
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    36  2.3560e-03  1.9026e-06  1.2756e-07  5.8063e-06  0:20:07  264
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    37  2.1412e-03  1.7345e-06  1.1597e-07  5.1936e-06  0:19:33  263
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    38  1.9532e-03  1.5778e-06  1.0637e-07  4.6824e-06  0:19:04  262
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    39  1.7852e-03  1.4435e-06  9.6185e-08  4.1841e-06  0:18:41  261
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    40  1.6162e-03  1.3082e-06  8.7535e-08  3.7758e-06  0:18:21  260
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    41  1.4683e-03  1.1839e-06  7.9604e-08  3.4010e-06  0:18:05  259
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    42  1.3395e-03  1.0708e-06  7.2252e-08  2.5515e-06  0:17:51  258
-    43  1.1527e-03  8.2903e-07  7.0194e-08  2.6612e-06  0:17:39  257
-        Stabilizing pressure coupled to enhance linear solver robustness.
-    44  1.1919e-03  8.2408e-07  6.7979e-08  2.4554e-06  0:16:37  256
+    22  9.6987e-03  1.2483e-05  9.3914e-07  4.2358e-05  0:16:31  278
         Stabilizing pressure coupled to enhance linear solver robustness.
 
   iter  continuity  x-velocity  y-velocity         nut     time/iter
-    45  1.0964e-03  7.4286e-07  6.0023e-08  2.2928e-06  0:16:39  255
+    23  8.6007e-03  1.1137e-05  7.9688e-07  3.7026e-05  0:16:51  277
         Stabilizing pressure coupled to enhance linear solver robustness.
-    46  9.3989e-04  6.8649e-07  5.1082e-08  2.1410e-06  0:16:39  254
-!   46 solution is converged
+    24  7.5323e-03  9.9678e-06  6.7077e-07  3.1908e-05  0:17:07  276
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    25  6.5743e-03  8.8290e-06  5.6472e-07  2.7433e-05  0:16:24  275
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    26  5.7835e-03  7.8185e-06  4.8621e-07  2.3567e-05  0:16:43  274
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    27  5.0519e-03  6.9384e-06  4.1605e-07  2.0171e-05  0:16:58  273
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    28  4.4453e-03  6.1478e-06  3.6214e-07  1.7265e-05  0:17:09  272
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    29  3.9658e-03  5.4367e-06  3.2056e-07  1.4559e-05  0:17:17  271
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    30  3.5128e-03  4.7594e-06  2.8208e-07  1.2417e-05  0:17:23  270
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    31  3.1002e-03  4.1837e-06  2.4824e-07  1.0909e-05  0:16:32  269
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    32  2.7961e-03  3.6992e-06  2.2071e-07  9.6315e-06  0:16:45  268
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    33  2.4733e-03  3.2937e-06  1.9346e-07  8.3154e-06  0:16:55  267
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    34  2.1965e-03  2.9178e-06  1.7106e-07  7.2041e-06  0:17:02  266
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    35  1.9621e-03  2.5889e-06  1.5290e-07  6.2267e-06  0:16:13  265
+    36  1.7482e-03  2.2896e-06  1.3739e-07  5.4581e-06  0:15:34  264
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    37  1.5755e-03  2.0178e-06  1.2546e-07  4.7985e-06  0:15:55  263
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    38  1.4048e-03  1.7847e-06  1.1192e-07  4.2444e-06  0:16:11  262
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    39  1.2444e-03  1.5775e-06  9.9643e-08  3.7560e-06  0:16:22  261
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    40  1.1013e-03  1.3964e-06  8.8997e-08  3.3424e-06  0:16:31  260
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    41  9.8100e-04  1.2394e-06  7.9872e-08  2.8884e-06  0:16:37  259
+!   41 solution is converged
 Registering ReportDefFiles, ("C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\.\\report-cd-rfile.out" "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\.\\report-cl-rfile.out")
 Writing "| gzip -2cf > SolutionMonitor.gz"...
-Writing temporary file C:\\Users\\mmartini\\AppData\\Local\\Temp\\flntgz-90042 ...
+Writing temporary file C:\\Users\\mmartini\\AppData\\Local\\Temp\\flntgz-19762 ...
 Done.
 
 
-number tracked = 693, escaped = 368, incomplete = 325
-Writing data to C:\\Users\\mmartini\\Downloads\\Assignment2\\Geometry_2023\\Main_files\\dp11\\FLU\\Fluent\\SYS.1.ip ...
+number tracked = 682, escaped = 357, incomplete = 325
+Writing data to C:\\Users\\mmartini\\Downloads\\Assignment2\\Geometry_2023\\Main_files\\dp11\\FLU\\Fluent\\SYS.ip ...
 	x-coord
 	y-coord
 	pressure
@@ -228,35 +217,35 @@ Writing data to C:\\Users\\mmartini\\Downloads\\Assignment2\\Geometry_2023\\Main
 	hyb_init-1
 Done.
 
-Writing to STI-WIN10-ax012:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\SYS.1-18.cas.h5" in NODE0 mode and compression level 1 ...
+Writing to STI-WIN10-ax025:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\SYS-19.cas.h5" in NODE0 mode and compression level 1 ...
   Writing mesh ...
-      457707 cells,     1 zone  ...
-      703231 faces,     8 zones ...
-      245524 nodes,     1 zone  ...
+      404890 cells,     1 zone  ...
+      624000 faces,     8 zones ...
+      219110 nodes,     1 zone  ...
   Done.
 Done.
 
-Writing to STI-WIN10-ax012:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\SYS.1-18-00046.dat.h5" in NODE0 mode and compression level 1 ...
+Writing to STI-WIN10-ax025:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp11\FLU\Fluent\SYS-19-00041.dat.h5" in NODE0 mode and compression level 1 ...
   Writing results.
 Done.
 
-Performance Timer for 46 iterations on 2 compute nodes
-  Average wall-clock time per iteration:              4.366 sec
-  Global reductions per iteration:                      193 ops
+Performance Timer for 41 iterations on 2 compute nodes
+  Average wall-clock time per iteration:              3.601 sec
+  Global reductions per iteration:                      179 ops
   Global reductions time per iteration:               0.000 sec (0.0%)
-  Message count per iteration:                        33006 messages
-  Data transfer per iteration:                       10.131 MB
-  LE solves per iteration:                                8 solves
-  LE wall-clock time per iteration:                   1.996 sec (45.7%)
-  LE global solves per iteration:                        16 solves
-  LE global wall-clock time per iteration:            0.003 sec (0.1%)
-  LE global matrix maximum size:                        11
-  AMG cycles per iteration:                          16.957 cycles
-  Relaxation sweeps per iteration:                    16420 sweeps
+  Message count per iteration:                        30914 messages
+  Data transfer per iteration:                        7.976 MB
+  LE solves per iteration:                                7 solves
+  LE wall-clock time per iteration:                   1.592 sec (44.2%)
+  LE global solves per iteration:                        15 solves
+  LE global wall-clock time per iteration:            0.006 sec (0.2%)
+  LE global matrix maximum size:                        26
+  AMG cycles per iteration:                          15.317 cycles
+  Relaxation sweeps per iteration:                    15376 sweeps
   Relaxation exchanges per iteration:                     0 exchanges
-  LE early protections (stall) per iteration:           0.957 times
-  LE early protections (divergence) per iteration:      0.935 times
+  LE early protections (stall) per iteration:           0.976 times
+  LE early protections (divergence) per iteration:      0.951 times
   Total SVARS touched:                              365
 
-  Total wall-clock time:                            200.853 sec
+  Total wall-clock time:                            147.641 sec
 
