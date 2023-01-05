@@ -1,0 +1,174 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by Ansys Workbench.
+# Project name: Main
+# Creation date: 01/01/2023 17:41:30
+# 
+# 01/01/2023 17:41:30
+# The parameters defined in the project are:
+# ,P1 - DistFl [m]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1
+DP 0,0.19515665262394688
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/02/2023 15:06:15
+# 
+# 
+# 01/02/2023 15:15:29
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P1 - DistFl [m],P2 - report-cd-op,P3 - report-cl-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3
+DP 1,0.03956,0.056102352,-1.3868374
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/02/2023 15:18:02
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/02/2023 15:23:47
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 14:11:58
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 14:41:59
+# 
+# 
+# 01/03/2023 14:57:42
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P4 - h_floor [m],P6 - report-cd-op,P7 - report-cl-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P4,P6,P7
+DP 0,0.0285,0.079432098,-1.3585044
+DP 1,0.033,0.068172669,-1.4134746
+DP 2,0.0352,0.063767746,-1.4621214
+DP 3,0.0364,0.061258536,-1.4596617
+DP 4,0.0375,0.059330769,-1.4835593
+DP 5,0.0386,0.057727878,-1.5002045
+DP 6,0.0397,0.055712944,-1.5016948
+DP 7,0.0419,0.052132913,-1.5203052
+DP 8,0.0576,0.035701277,-1.5063175
+DP 9,0.0665,0.030809865,-1.4351966
+DP 10,0.0866,0.02510812,-1.2862786
+DP 11,0.1291,0.020754974,-1.1007013
+DP 12,0.1737,0.019038477,-1.0080413
+DP 13,0.243,0.017844918,-0.94413998
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 15:26:05
+# 
+DP 0,0.0285,0.079555751,-1.3308678
+DP 1,0.033,0.069011586,-1.4012227
+DP 2,0.0352,0.064368839,-1.4354543
+DP 3,0.0364,0.061942695,-1.4508976
+DP 4,0.0375,0.059862871,-1.4437126
+DP 5,0.0386,0.058179431,-1.4533105
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 15:41:01
+# 
+DP 0,0.0285,0.079726968,-1.3349625
+DP 1,0.033,0.069223797,-1.3963903
+DP 2,0.0352,0.064332174,-1.4226648
+DP 3,0.0364,0.062118306,-1.4166253
+DP 4,0.0375,0.059927252,-1.4412417
+DP 5,0.0386,0.058063841,-1.4499834
+DP 6,0.0397,0.056177587,-1.4782439
+DP 7,0.0419,0.052645085,-1.4861095
+DP 8,0.0576,0.035933292,-1.4683439
+DP 9,0.0665,0.031057062,-1.4061691
+DP 10,0.0866,0.025368497,-1.2762072
+DP 11,0.1291,0.020781403,-1.0952933
+DP 12,0.1737,0.018990141,-1.0099503
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 16:23:58
+# 
+DP 2,0.0352,0.068590514,-1.2664415
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 16:36:22
+# 
+DP 0,0.0285,0.079653679,-1.3781292
+DP 1,0.033,0.068599762,-1.4545867
+DP 2,0.0352,0.063742466,-1.4856181
+DP 3,0.0364,0.061417338,-1.4993949
+DP 4,0.0375,0.059508595,-1.5166171
+DP 5,0.0386,0.057235349,-1.5272401
+DP 6,0.0397,0.05557162,-1.5332452
+DP 7,0.0419,0.051816595,-1.5601628
+DP 8,0.0576,0.035488087,-1.5242371
+DP 9,0.0665,0.030704185,-1.455862
+DP 10,0.0866,0.025183813,-1.3013534
+DP 11,0.1291,0.020836485,-1.1070542
+DP 12,0.1737,0.019148664,-1.0138943
+DP 13,0.243,0.017976175,-0.94826995
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 17:40:50
+# 
+DP 0,0.0285,0.079314229,-1.3837222
+DP 1,0.033,0.068480275,-1.4875841
+DP 2,0.0352,0.063941997,-1.5283822
+DP 3,0.0364,0.061508457,-1.5455214
+DP 4,0.0375,0.05944867,-1.5592347
+DP 5,0.0386,0.057428525,-1.5754365
+DP 6,0.0397,0.055381748,-1.5782812
+DP 7,0.0419,0.051675313,-1.5881592
+DP 8,0.0576,0.035096501,-1.5602882
+DP 9,0.0665,0.030481307,-1.4831874
+DP 10,0.0866,0.024984462,-1.3150267
+DP 11,0.1291,0.020617127,-1.1132861
+DP 12,0.1737,0.018927989,-1.0194516
+DP 13,0.243,0.017783172,-0.95069118
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/03/2023 18:39:16
+# 
+# 
+# 01/03/2023 18:46:50
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P4 - h_floor [m],P6 - report-cd-op,P7 - report-cl-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P4,P6,P7
+DP 0,0.0285,0.079699801,-1.3975714
+DP 1,0.033,0.068612926,-1.4942181
+DP 2,0.0352,0.06392674,-1.528071
+DP 3,0.0364,0.061341275,-1.5418246
+DP 4,0.0375,0.059322978,-1.5499014
+DP 5,0.0386,0.057234106,-1.5634124
+DP 6,0.0397,0.055379531,-1.5737754
+DP 7,0.0419,0.051661205,-1.5900141
+DP 8,0.0576,0.034982974,-1.5529151
+DP 9,0.0665,0.030345401,-1.4746356
+DP 10,0.0866,0.024895379,-1.3087421
+DP 11,0.1291,0.020511129,-1.1089587
+DP 12,0.1737,0.018809942,-1.0158913
+DP 13,0.243,0.017685009,-0.94803466
+# 
+# 01/04/2023 15:58:10
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P4 - h_floor [m],P6 - report-cd-op,P7 - report-cl-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P4,P6,P7
+DP 8,0.0442,0.048243504,-1.5936203
+DP 9,0.0486,0.042751054,-1.5978142
+DP 10,0.0531,0.038376569,-1.5825381
+DP 11,0.0576,0.034982317,-1.5529855
+DP 12,0.0665,0.030343845,-1.474648
+DP 13,0.0866,0.024895206,-1.3087509
+DP 14,0.1291,0.020511129,-1.1089587
+DP 15,0.1737,0.018809942,-1.0158913
+DP 16,0.243,0.017685009,-0.94803466
+# 
+# A non parametric change occurred and invalidated design point results.
+# 01/04/2023 17:30:39
+# 

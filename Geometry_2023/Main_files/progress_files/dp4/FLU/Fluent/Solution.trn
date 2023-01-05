@@ -1,0 +1,219 @@
+
+Build Time: May 28 2021 13:54:23 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v212/fluent/ntbin/win64/fluent.exe
+
+--------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID   Vendor                          
+--------------------------------------------------------------------------------
+n1    STI-WIN10-ax012  2/3  Windows-x64  9504  Intel(R) Xeon(R) Gold 6248R     
+n0*   STI-WIN10-ax012  1/3  Windows-x64  2640  Intel(R) Xeon(R) Gold 6248R     
+host  STI-WIN10-ax012       Windows-x64  7812  Intel(R) Xeon(R) Gold 6248R     
+
+MPI Option Selected: intel
+Selected system interconnect: default
+--------------------------------------------------------------------------------
+
+Cortex Process ID: 11672 
+License Server Path: 1055@siclic1.epfl.ch 
+Reading "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\SYS\MECH\SYS.1.msh"...
+Buffering for file scan...
+
+  209808 nodes, binary.
+    2518 nodes, binary.
+  601161 2D interior faces, zone  1, binary.
+     346 2D wall faces, zone  5, binary.
+     326 2D wall faces, zone  6, binary.
+       7 2D wall faces, zone  7, binary.
+     325 2D velocity-inlet faces, zone  8, binary.
+     354 2D pressure-outlet faces, zone  9, binary.
+     382 2D wall faces, zone 10, binary.
+     778 2D wall faces, zone 11, binary.
+  391353 mixed cells, zone  2, binary.
+
+
+
+Following contexts active in the case file have been de-activated because of their current context control conditions:
+"coupled-pseudo-transient"
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts..,
+		faces..,
+		nodes..,
+		cells..,
+        bandwidth reduction using Reverse Cuthill-McKee: 197414/580 = 340.369
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	belt
+	ceiling
+	outlet
+	inlet
+	wing_te_wall
+	wing_down_wall
+	wing_up_wall
+	surface_body
+	interior-surface_bodySetting surface_body (mixture) ... Done.
+ Setting zone id of surface_body to 2.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of wing_up_wall to 24.
+ Setting zone id of wing_down_wall to 5.
+ Setting zone id of wing_te_wall to 6.
+ Setting zone id of inlet to 7.
+ Setting zone id of outlet to 8.
+ Setting zone id of ceiling to 20.
+ Setting zone id of belt to 10.
+Done.
+Setting surface_body (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting wing_up_wall (mixture) ... Done.
+Setting wing_down_wall (mixture) ... Done.
+Setting wing_te_wall (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting ceiling (mixture) ... Done.
+Setting belt (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+"Updating Setup cell..."
+"Updating Solution cell..."
+Reading C:\\Users\\mmartini\\Downloads\\Assignment2\\Geometry_2023\\Main_files\\dp4\\FLU\\Fluent\\SYS.ip...
+Reading IP data ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	nut
+	hyb_init-0
+	hyb_init-1
+  Done.
+  Initializing values...
+  Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Writing to STI-WIN10-ax012:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\FLU\Fluent\SYS.1-Setup-Output.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      391353 cells,     1 zone  ...
+      603679 faces,     8 zones ...
+      212326 nodes,     1 zone  ...
+  Done.
+Done.
+Overwriting "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\FLU\Fluent\.\\report-cl-rfile.out"  of Report File "report-cl-rfile"
+Overwriting "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\FLU\Fluent\.\\report-cd-rfile.out"  of Report File "report-cd-rfile"
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+     1  1.0000e+00  2.4917e-04  4.2428e-05  2.3499e-02  0:04:59  299
+     2  5.5832e-01  1.6840e-04  3.3410e-05  6.0578e-03  0:04:58  298
+     3  2.7443e-01  9.8899e-05  1.9534e-05  1.6204e-03  0:04:57  297
+     4  1.6782e-01  6.4379e-05  1.2143e-05  4.9004e-04  0:04:56  296
+     5  1.3379e-01  4.4629e-05  8.1513e-06  2.2621e-04  0:05:54  295
+     6  1.1488e-01  3.3229e-05  6.1344e-06  1.7870e-04  0:06:40  294
+     7  9.7405e-02  2.6578e-05  5.0299e-06  1.5635e-04  0:06:17  293
+     8  7.8513e-02  2.1587e-05  3.9287e-06  1.5690e-04  0:06:58  292
+     9  6.4156e-02  1.8544e-05  3.1845e-06  1.4935e-04  0:06:31  291
+    10  5.0518e-02  1.5925e-05  2.4838e-06  1.3698e-04  0:07:08  290
+    11  4.1969e-02  1.4277e-05  2.0370e-06  1.0950e-04  0:06:39  289
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    12  3.4407e-02  1.2530e-05  1.6422e-06  8.4561e-05  0:07:13  288
+    13  2.9117e-02  1.1335e-05  1.3774e-06  6.7891e-05  0:06:43  287
+    14  2.4504e-02  1.0038e-05  1.1563e-06  6.7404e-05  0:07:16  286
+    15  2.1148e-02  9.2355e-06  1.0023e-06  7.2444e-05  0:06:44  285
+    16  1.8574e-02  8.5232e-06  8.6805e-07  7.5285e-05  0:07:16  284
+    17  1.6477e-02  7.8870e-06  7.4810e-07  7.2410e-05  0:06:44  283
+    18  1.4652e-02  7.2483e-06  6.4496e-07  6.4742e-05  0:07:15  282
+    19  1.3109e-02  6.6435e-06  5.5927e-07  5.3022e-05  0:06:43  281
+    20  1.1766e-02  6.0726e-06  4.8710e-07  4.0840e-05  0:07:13  280
+    21  1.0574e-02  5.5422e-06  4.2881e-07  3.1219e-05  0:06:41  279
+    22  9.5819e-03  5.0629e-06  3.8244e-07  2.4803e-05  0:07:11  278
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    23  8.6774e-03  4.6115e-06  3.4464e-07  2.1313e-05  0:06:39  277
+    24  7.8015e-03  4.1921e-06  3.1375e-07  1.9444e-05  0:07:08  276
+    25  7.0062e-03  3.7967e-06  2.8212e-07  1.7895e-05  0:06:36  275
+    26  6.2909e-03  3.4469e-06  2.5249e-07  1.6111e-05  0:07:06  274
+    27  5.6662e-03  3.1326e-06  2.2592e-07  1.4267e-05  0:06:34  273
+    28  5.0767e-03  2.8438e-06  2.0229e-07  1.2064e-05  0:07:03  272
+    29  4.4937e-03  2.5325e-06  1.8224e-07  1.0509e-05  0:06:31  271
+    30  4.0162e-03  2.2794e-06  1.6405e-07  9.3493e-06  0:06:06  270
+    31  3.6194e-03  2.0680e-06  1.4748e-07  8.3932e-06  0:06:39  269
+    32  3.2980e-03  1.8866e-06  1.3291e-07  7.5815e-06  0:06:12  268
+    33  3.0120e-03  1.7247e-06  1.2027e-07  6.8388e-06  0:05:50  267
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    34  2.7476e-03  1.5758e-06  1.0935e-07  6.1690e-06  0:06:25  266
+    35  2.5054e-03  1.4443e-06  9.8929e-08  5.5802e-06  0:06:00  265
+    36  2.2871e-03  1.3233e-06  9.0262e-08  5.0893e-06  0:05:40  264
+    37  2.1005e-03  1.2162e-06  8.2539e-08  4.6540e-06  0:06:16  263
+    38  1.9246e-03  1.1198e-06  7.5931e-08  4.2274e-06  0:05:52  262
+    39  1.7593e-03  1.0312e-06  6.9552e-08  3.8344e-06  0:05:33  261
+    40  1.6179e-03  9.5051e-07  6.3774e-08  3.4985e-06  0:06:09  260
+    41  1.4807e-03  8.7538e-07  5.8481e-08  3.2007e-06  0:05:46  259
+    42  1.3518e-03  8.0520e-07  5.3580e-08  2.9231e-06  0:05:27  258
+    43  1.2293e-03  7.3775e-07  4.8978e-08  2.6519e-06  0:06:04  257
+    44  1.1163e-03  6.7483e-07  4.4654e-08  2.3962e-06  0:05:41  256
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    45  1.0142e-03  6.1668e-07  4.0786e-08  2.1599e-06  0:05:23  255
+    46  9.2486e-04  5.6308e-07  3.7546e-08  1.9403e-06  0:05:59  254
+!   46 solution is converged
+Registering ReportDefFiles, ("C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\FLU\Fluent\.\\report-cd-rfile.out" "C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\FLU\Fluent\.\\report-cl-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\mmartini\\AppData\\Local\\Temp\\flntgz-78122 ...
+Done.
+
+
+number tracked = 679, escaped = 354, incomplete = 325
+Writing data to C:\\Users\\mmartini\\Downloads\\Assignment2\\Geometry_2023\\Main_files\\dp4\\FLU\\Fluent\\SYS.1.ip ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	nut
+	hyb_init-0
+	hyb_init-1
+Done.
+
+Writing to STI-WIN10-ax012:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\FLU\Fluent\SYS.1-18.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      391353 cells,     1 zone  ...
+      603679 faces,     8 zones ...
+      212326 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to STI-WIN10-ax012:"C:\Users\mmartini\Downloads\Assignment2\Geometry_2023\Main_files\dp4\FLU\Fluent\SYS.1-18-00046.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 46 iterations on 2 compute nodes
+  Average wall-clock time per iteration:              1.380 sec
+  Global reductions per iteration:                       98 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                         2429 messages
+  Data transfer per iteration:                        2.090 MB
+  LE solves per iteration:                                2 solves
+  LE wall-clock time per iteration:                   0.985 sec (71.4%)
+  LE global solves per iteration:                         6 solves
+  LE global wall-clock time per iteration:            0.001 sec (0.1%)
+  LE global matrix maximum size:                        21
+  AMG cycles per iteration:                           6.478 cycles
+  Relaxation sweeps per iteration:                     1162 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              365
+
+  Total wall-clock time:                             63.463 sec
+

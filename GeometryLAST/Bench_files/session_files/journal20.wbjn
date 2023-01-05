@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # encoding: utf-8
 # 2022 R2
 SetScriptVersion(Version="22.2.192")
@@ -5,3 +6,15 @@ system1 = GetSystem(Name="SYS")
 mesh1 = system1.GetContainer(ComponentName="Mesh")
 mesh1.Edit()
 mesh1.Exit()
+=======
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+system2 = GetSystem(Name="SYS")
+mesh1 = system2.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+>>>>>>> 2c5ebb857482873ea7945e2937cc378890e929e1
