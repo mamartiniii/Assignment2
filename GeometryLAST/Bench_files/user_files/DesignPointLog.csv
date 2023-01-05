@@ -176,3 +176,15 @@ DP 21,0.765966,-8.5,-336.33448,11.777422
 # A non parametric change occurred and invalidated design point results.
 # 12/27/2022 10:54:32
 # 
+# 
+# This file contains the parameter values of the Design Points successfully updated by Ansys Workbench.
+# Project name: Bench
+# Creation date: 01/02/2023 16:09:51
+# 
+# 01/02/2023 16:09:51
+# The parameters defined in the project are:
+# ,P1 - Distance_FLoor [m],P2 - Angle_Flap [degree],P5 - report-lift-op [N],P4 - report-drag-op [N],P6 - report-cl-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P5,P4,P6
+DP 8,0.167466,0,-620.5239,25.998257,-2.9622814
